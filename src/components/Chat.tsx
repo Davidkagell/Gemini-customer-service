@@ -97,7 +97,6 @@ export default function Chat({ onClose }: ChatProps) {
           <h1 className="text-lg font-semibold tracking-tight text-textColor">
             {t("common.title")}
           </h1>
-          <p className="text-sm text-textColor/60">{t("common.subtitle")}</p>
         </div>
         <button
           type="button"
@@ -141,7 +140,7 @@ export default function Chat({ onClose }: ChatProps) {
                   }`}
                 >
                   {!isUser && (
-                    <p className="mb-1 text-xs font-medium text-textColor/45">
+                    <p className="mb-1 text-xs font-medium text-textColor/60">
                       {t("common.assistantLabel")}
                     </p>
                   )}
@@ -190,7 +189,7 @@ export default function Chat({ onClose }: ChatProps) {
             </button>
           )}
         </div>
-        <p className="mx-auto mt-2 max-w-2xl text-xs text-textColor/40">
+        <p className="mx-auto mt-2 max-w-2xl text-xs text-textColor/80">
           {t("common.maxLength", { max: MAX_MESSAGE_LENGTH })}
         </p>
       </form>
