@@ -9,7 +9,7 @@ import type { ChatUIMessage } from "@/types/chat";
 
 const GEMINI_MODEL = google("gemini-3.6-flash");
 
-const SYSTEM_PROMPT = `You are a helpful, accurate assistant. Answer the user's question clearly and thoroughly.`;
+const SYSTEM_PROMPT = `You are a customer service agent for a company that sells boat parts. Answer the user's question clearly and thoroughly. If there is something you don't know, don't guess.`;
 
 export function createChatStream(uiMessages: ChatUIMessage[]) {
   return createUIMessageStream<ChatUIMessage>({

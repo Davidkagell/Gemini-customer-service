@@ -3,8 +3,17 @@
 import { useChat } from "@ai-sdk/react";
 import { useTranslations } from "next-intl";
 import { DefaultChatTransport, isTextUIPart } from "ai";
-import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type FormEvent,
+  type KeyboardEvent,
+} from "react";
 import { MAX_MESSAGE_LENGTH, type ChatUIMessage } from "@/types/chat";
+
+const INPUT_MAX_ROWS = 2;
 
 function getMessageText(message: ChatUIMessage): string {
   return message.parts
@@ -61,6 +70,7 @@ type ChatProps = {
 export default function Chat({ onClose }: ChatProps) {
   const t = useTranslations();
   const [input, setInput] = useState("");
+  const inputRef = useRef<HTMLTextAreaElement>(null);
   const { scrollerRef, contentRef, onScroll, pinToBottom } = useStickToBottom();
 
   const transport = useMemo(
@@ -75,6 +85,20 @@ export default function Chat({ onClose }: ChatProps) {
 
   const isBusy = status === "submitted" || status === "streaming";
 
+  useEffect(() => {
+    const el = inputRef.current;
+    if (!el) return;
+
+    el.style.height = "auto";
+    const styles = getComputedStyle(el);
+    const lineHeight = Number.parseFloat(styles.lineHeight);
+    const paddingY =
+      Number.parseFloat(styles.paddingTop) +
+      Number.parseFloat(styles.paddingBottom);
+    const maxHeight = lineHeight * INPUT_MAX_ROWS + paddingY;
+    el.style.height = `${Math.min(el.scrollHeight, maxHeight)}px`;
+  }, [input]);
+
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const text = input.trim();
@@ -88,6 +112,15 @@ export default function Chat({ onClose }: ChatProps) {
     setInput("");
     pinToBottom();
     await sendMessage({ text });
+  }
+
+  function handleInputKeyDown(event: KeyboardEvent<HTMLTextAreaElement>) {
+    if (event.key !== "Enter" || event.shiftKey || event.nativeEvent.isComposing) {
+      return;
+    }
+
+    event.preventDefault();
+    event.currentTarget.form?.requestSubmit();
   }
 
   return (
@@ -162,14 +195,17 @@ export default function Chat({ onClose }: ChatProps) {
         onSubmit={handleSubmit}
         className="shrink-0 border-t border-foreground/10 px-4 py-4"
       >
-        <div className="mx-auto flex w-full max-w-2xl gap-2">
-          <input
+        <div className="mx-auto flex w-full max-w-2xl items-end gap-2">
+          <textarea
+            ref={inputRef}
             value={input}
             onChange={(event) => setInput(event.target.value)}
+            onKeyDown={handleInputKeyDown}
             placeholder={t("common.placeholder")}
             maxLength={MAX_MESSAGE_LENGTH}
             disabled={isBusy}
-            className="min-w-0 flex-1 rounded-2xl border border-foreground/10 bg-background px-4 py-3 text-black shadow-sm outline-none transition placeholder:text-black focus:border-foreground/20 focus:ring-4 focus:ring-foreground/5 disabled:opacity-60"
+            rows={1}
+            className="min-h-0 min-w-0 flex-1 resize-none overflow-y-auto rounded-2xl border border-foreground/10 bg-background px-4 py-3 text-sm leading-5 text-black shadow-sm outline-none transition placeholder:text-black focus:border-foreground/20 focus:ring-4 focus:ring-foreground/5 disabled:opacity-60"
           />
           {isBusy ? (
             <button
