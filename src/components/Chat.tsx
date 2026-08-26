@@ -3,7 +3,7 @@
 import { useChat } from "@ai-sdk/react";
 import { useTranslations } from "next-intl";
 import { DefaultChatTransport, isTextUIPart } from "ai";
-import { useMemo, useState, type FormEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import { MAX_MESSAGE_LENGTH, type ChatUIMessage } from "@/types/chat";
 
 function getMessageText(message: ChatUIMessage): string {
@@ -13,6 +13,47 @@ function getMessageText(message: ChatUIMessage): string {
     .join("");
 }
 
+const STICK_TO_BOTTOM_THRESHOLD_PX = 64;
+
+function isNearBottom(element: HTMLElement) {
+  return (
+    element.scrollHeight - element.scrollTop - element.clientHeight <=
+    STICK_TO_BOTTOM_THRESHOLD_PX
+  );
+}
+
+function useStickToBottom() {
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const stickToBottomRef = useRef(true);
+
+  function pinToBottom() {
+    stickToBottomRef.current = true;
+  }
+
+  useEffect(() => {
+    const scroller = scrollerRef.current;
+    const content = contentRef.current;
+    if (!scroller || !content) return;
+
+    const observer = new ResizeObserver(() => {
+      if (!stickToBottomRef.current) return;
+      scroller.scrollTop = scroller.scrollHeight;
+    });
+
+    observer.observe(content);
+    return () => observer.disconnect();
+  }, []);
+
+  function onScroll() {
+    const scroller = scrollerRef.current;
+    if (!scroller) return;
+    stickToBottomRef.current = isNearBottom(scroller);
+  }
+
+  return { scrollerRef, contentRef, onScroll, pinToBottom };
+}
+
 type ChatProps = {
   onClose: () => void;
 };
@@ -20,6 +61,7 @@ type ChatProps = {
 export default function Chat({ onClose }: ChatProps) {
   const t = useTranslations();
   const [input, setInput] = useState("");
+  const { scrollerRef, contentRef, onScroll, pinToBottom } = useStickToBottom();
 
   const transport = useMemo(
     () => new DefaultChatTransport({ api: "/api/chat" }),
@@ -44,6 +86,7 @@ export default function Chat({ onClose }: ChatProps) {
 
     clearError();
     setInput("");
+    pinToBottom();
     await sendMessage({ text });
   }
 
@@ -54,7 +97,6 @@ export default function Chat({ onClose }: ChatProps) {
           <h1 className="text-lg font-semibold tracking-tight text-textColor">
             {t("common.title")}
           </h1>
-          <p className="text-sm text-textColor/60">{t("common.subtitle")}</p>
         </div>
         <button
           type="button"
@@ -66,45 +108,54 @@ export default function Chat({ onClose }: ChatProps) {
         </button>
       </header>
 
-      <div className="mx-auto flex min-h-0 w-full max-w-2xl flex-1 flex-col gap-4 overflow-y-auto px-4 py-6">
-        {messages.length === 0 && (
-          <div className="rounded-xl border border-dashed border-purple-400/10 bg-purple-700 px-4 py-10 text-center text-sm text-textColor">
-            {t("common.empty")}
-          </div>
-        )}
-
-        {messages.map((message) => {
-          const text = getMessageText(message);
-          const isUser = message.role === "user";
-
-          return (
-            <div
-              key={message.id}
-              className={`flex ${isUser ? "justify-end" : "justify-start"}`}
-            >
-              <div
-                className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-wrap ${
-                  isUser
-                    ? "bg-foreground text-background"
-                    : "border border-foreground/10 bg-foreground/3 text-textColor"
-                }`}
-              >
-                {!isUser && (
-                  <p className="mb-1 text-xs font-medium text-textColor/45">
-                    {t("common.assistantLabel")}
-                  </p>
-                )}
-                {text || <span className="text-textColor/40">...</span>}
-              </div>
+      <div
+        ref={scrollerRef}
+        onScroll={onScroll}
+        className="min-h-0 flex-1 overflow-y-auto px-4 py-6 [overflow-anchor:none]"
+      >
+        <div
+          ref={contentRef}
+          className="mx-auto flex w-full max-w-2xl flex-col gap-4"
+        >
+          {messages.length === 0 && (
+            <div className="rounded-xl border border-dashed border-purple-400/10 bg-purple-700 px-4 py-10 text-center text-sm text-textColor">
+              {t("common.empty")}
             </div>
-          );
-        })}
+          )}
 
-        {error && (
-          <div className="rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-700 dark:text-red-300">
-            {error.message}
-          </div>
-        )}
+          {messages.map((message) => {
+            const text = getMessageText(message);
+            const isUser = message.role === "user";
+
+            return (
+              <div
+                key={message.id}
+                className={`flex ${isUser ? "justify-end" : "justify-start"}`}
+              >
+                <div
+                  className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-wrap ${
+                    isUser
+                      ? "bg-foreground text-background"
+                      : "border border-foreground/10 bg-foreground/3 text-textColor"
+                  }`}
+                >
+                  {!isUser && (
+                    <p className="mb-1 text-xs font-medium text-textColor/60">
+                      {t("common.assistantLabel")}
+                    </p>
+                  )}
+                  {text || <span className="text-textColor/40">...</span>}
+                </div>
+              </div>
+            );
+          })}
+
+          {error && (
+            <div className="rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-700 dark:text-red-300">
+              {error.message}
+            </div>
+          )}
+        </div>
       </div>
 
       <form
@@ -138,7 +189,7 @@ export default function Chat({ onClose }: ChatProps) {
             </button>
           )}
         </div>
-        <p className="mx-auto mt-2 max-w-2xl text-xs text-textColor/40">
+        <p className="mx-auto mt-2 max-w-2xl text-xs text-textColor/80">
           {t("common.maxLength", { max: MAX_MESSAGE_LENGTH })}
         </p>
       </form>

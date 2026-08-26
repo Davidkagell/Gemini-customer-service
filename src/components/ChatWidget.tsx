@@ -21,10 +21,10 @@ export default function ChatWidget() {
 
   return (
     <div
-      className={`fixed right-4 bottom-4 z-50 origin-bottom-right overflow-hidden bg-purple-900 shadow-lg transition-[width,height,border-radius,box-shadow] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${
+      className={`fixed right-12 bottom-12 z-50 origin-bottom-right overflow-hidden bg-purple-900 transition-[width,height,border-radius,box-shadow,transform] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${
         isExpanded
           ? "h-[min(32rem,calc(100dvh-5rem))] w-[min(24rem,calc(100vw-2rem))] rounded-2xl shadow-2xl"
-          : "h-[30px] w-[30px] rounded-full"
+          : "h-20 w-20 rounded-full shadow-[0_10px_28px_rgba(88,28,135,0.5)] hover:scale-105 hover:shadow-[0_14px_36px_rgba(88,28,135,0.6)] active:scale-95"
       }`}
     >
       <div

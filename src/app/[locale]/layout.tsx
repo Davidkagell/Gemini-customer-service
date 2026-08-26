@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import ChatWidget from "@/components/ChatWidget";
 import Header from "@/components/Header";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
@@ -49,6 +50,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           <Header />
           {children}
+          <ChatWidget />
         </NextIntlClientProvider>
       </body>
     </html>
