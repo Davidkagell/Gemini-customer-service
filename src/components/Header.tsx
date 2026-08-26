@@ -5,7 +5,7 @@ export default function Header() {
   const t = useTranslations("nav");
 
   return (
-    <section className=" ">
+    <section className=" border-b-2 ">
       <ul className="ml-10 h-20 items-center flex flex-row gap-5">
         <li>
           <Link href="/">{t("start")}</Link>
