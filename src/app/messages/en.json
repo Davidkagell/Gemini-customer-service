@@ -1,0 +1,21 @@
+{
+  "common": {
+    "title": "The ultimate chat",
+    "subtitle": "Gemini streams the reply directly",
+    "empty": "Type a question below. Gemini replies right away.",
+    "assistantLabel": "Gemini",
+    "generating": "Gemini is writing...",
+    "placeholder": "What's up?",
+    "stop": "Stop",
+    "send": "Send",
+    "openChat": "Open chat",
+    "closeChat": "Close chat",
+    "maxLength": "Max {max} characters per message"
+  },
+  "nav": {
+    "start": "Start",
+    "products": "Products",
+    "about": "About us",
+    "contact": "Contact us"
+  }
+}

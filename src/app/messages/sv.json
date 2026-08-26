@@ -1,0 +1,21 @@
+{
+  "common": {
+    "title": "Den ultimata chatten",
+    "subtitle": "Gemini streamar svaret direkt",
+    "empty": "Skriv en fråga nedan. Gemini svarar direkt.",
+    "assistantLabel": "Gemini",
+    "generating": "Gemini skriver...",
+    "placeholder": "Vad händer?",
+    "stop": "Stopp",
+    "send": "Skicka",
+    "openChat": "Öppna chatten",
+    "closeChat": "Stäng chatten",
+    "maxLength": "Max {max} tecken per meddelande"
+  },
+  "nav": {
+    "start": "Start",
+    "products": "Produkter",
+    "about": "Om oss",
+    "contact": "Kontakta oss"
+  }
+}
