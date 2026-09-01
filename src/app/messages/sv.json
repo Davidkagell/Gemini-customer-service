@@ -16,5 +16,16 @@
     "products": "Produkter",
     "about": "Om oss",
     "contact": "Kontakta oss"
+  },
+  "productsPage": {
+    "title": "Produkter",
+    "inStock": "I lager",
+    "outOfStock": "Slut i lager"
+  },
+  "aboutPage": {
+    "title": "Om oss",
+    "lead": "Vi säljer båtdelar som ska sitta, täta och hålla – och svarar när du behöver hjälp att välja rätt.",
+    "story": "Davids båtdelar är en liten butik för folk som faktiskt är ute på sjön. Sortimentet är medvetet smalt: ankare, propellrar, tampar, lanternor, pumpar och lite elektronik. Hellre rätt del i lager än hyllmeter med sådant ingen frågar efter.",
+    "help": "Osäker på storlek, stigning eller vad som passar din båt? Fråga chatten nere till höger. Den känner till vårt sortiment och gissar inte."
   }
 }
