@@ -9,7 +9,11 @@ import type { ChatUIMessage } from "@/types/chat";
 
 const GEMINI_MODEL = google("gemini-3.6-flash");
 
-const SYSTEM_PROMPT = `You are a customer service agent for a company that sells boat parts. Answer the user's question clearly and thoroughly. If there is something you don't know, don't guess.`;
+const SYSTEM_INSTRUCTIONS = `You are a customer service agent for Davids boat parts.
+Davids boat parts is a company that sells boat parts.
+Respond  the user's question clearly and thoroughly. 
+Respond the same language as user. 
+If there is something you don't know, don't guess.`
 
 export function createChatStream(uiMessages: ChatUIMessage[]) {
   return createUIMessageStream<ChatUIMessage>({
@@ -23,8 +27,8 @@ export function createChatStream(uiMessages: ChatUIMessage[]) {
 
       const result = streamText({
         model: GEMINI_MODEL,
-        temperature: 0.3,
-        system: SYSTEM_PROMPT,
+        temperature: 0.1,
+        instructions: SYSTEM_INSTRUCTIONS,
         messages: modelMessages,
       });
 

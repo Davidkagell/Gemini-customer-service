@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import Chat from "@/components/Chat";
 import ChatButton from "@/components/ChatButton";
 
 export default function ChatWidget() {
   const [isExpanded, setIsExpanded] = useState(false);
   const panelId = useId();
+  const widgetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!isExpanded) return;
@@ -15,12 +16,25 @@ export default function ChatWidget() {
       if (event.key === "Escape") setIsExpanded(false);
     }
 
+    function onPointerDown(event: PointerEvent) {
+      const widget = widgetRef.current;
+      if (!widget?.contains(event.target as Node)) {
+        setIsExpanded(false);
+      }
+    }
+
     window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
+    document.addEventListener("pointerdown", onPointerDown);
+
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("pointerdown", onPointerDown);
+    };
   }, [isExpanded]);
 
   return (
     <div
+      ref={widgetRef}
       className={`fixed right-12 bottom-12 z-50 origin-bottom-right overflow-hidden bg-purple-900 transition-[width,height,border-radius,box-shadow,transform] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${
         isExpanded
           ? "h-[min(32rem,calc(100dvh-5rem))] w-[min(24rem,calc(100vw-2rem))] rounded-2xl shadow-2xl"
@@ -36,7 +50,7 @@ export default function ChatWidget() {
         }`}
         inert={!isExpanded}
       >
-        <Chat onClose={() => setIsExpanded(false)} />
+        <Chat isOpen={isExpanded} onClose={() => setIsExpanded(false)} />
       </div>
 
       <div

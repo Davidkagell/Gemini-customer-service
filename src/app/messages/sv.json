@@ -1,8 +1,7 @@
 {
   "common": {
     "title": "Den ultimata kundtjänsten",
-    "subtitle": "Gemini streamar svaret direkt",
-    "empty": "Skriv en fråga nedan. Gemini svarar direkt.",
+    "empty": "Hej. Vad behöver du hjälp med idag?",
     "assistantLabel": "Gemini",
     "generating": "Gemini skriver...",
     "placeholder": "Vad händer?",
