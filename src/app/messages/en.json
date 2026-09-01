@@ -1,8 +1,7 @@
 {
   "common": {
-    "title": "The ultimate chat",
-    "subtitle": "Gemini streams the reply directly",
-    "empty": "Type a question below. Gemini replies right away.",
+    "title": "The ultimate customer service",
+    "empty": "Hi. What do you need help with today?",
     "assistantLabel": "Gemini",
     "generating": "Gemini is writing...",
     "placeholder": "What's up?",

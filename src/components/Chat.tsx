@@ -64,10 +64,11 @@ function useStickToBottom() {
 }
 
 type ChatProps = {
+  isOpen: boolean;
   onClose: () => void;
 };
 
-export default function Chat({ onClose }: ChatProps) {
+export default function Chat({ isOpen, onClose }: ChatProps) {
   const t = useTranslations();
   const [input, setInput] = useState("");
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -84,6 +85,16 @@ export default function Chat({ onClose }: ChatProps) {
     });
 
   const isBusy = status === "submitted" || status === "streaming";
+
+  useEffect(() => {
+    if (!isOpen || isBusy) return;
+
+    const id = window.setTimeout(() => {
+      inputRef.current?.focus();
+    }, 150);
+
+    return () => window.clearTimeout(id);
+  }, [isOpen, isBusy]);
 
   useEffect(() => {
     const el = inputRef.current;
@@ -151,7 +162,7 @@ export default function Chat({ onClose }: ChatProps) {
           className="mx-auto flex w-full max-w-2xl flex-col gap-4"
         >
           {messages.length === 0 && (
-            <div className="rounded-xl border border-dashed border-purple-400/10 bg-purple-700 px-4 py-10 text-center text-sm text-textColor">
+            <div className="rounded-xl border border-dashed border-purple-400/10 bg-purple-700 px-4 py-5 text-center text-sm text-textColor">
               {t("common.empty")}
             </div>
           )}
@@ -205,7 +216,7 @@ export default function Chat({ onClose }: ChatProps) {
             maxLength={MAX_MESSAGE_LENGTH}
             disabled={isBusy}
             rows={1}
-            className="min-h-0 min-w-0 flex-1 resize-none overflow-y-auto rounded-2xl border border-foreground/10 bg-background px-4 py-3 text-sm leading-5 text-black shadow-sm outline-none transition placeholder:text-black focus:border-foreground/20 focus:ring-4 focus:ring-foreground/5 disabled:opacity-60"
+            className="min-h-0 min-w-0 flex-1 resize-none overflow-y-auto rounded-2xl border border-foreground/10 bg-background px-4 py-3 text-sm leading-5 text-black shadow-sm outline-none transition placeholder:text-black focus-visible:border-foreground/20 focus-visible:ring-4 focus-visible:ring-foreground/5 disabled:opacity-60"
           />
           {isBusy ? (
             <button
