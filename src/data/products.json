@@ -538,5 +538,145 @@
     "currency": "SEK",
     "quantity": 11,
     "inStock": true
+  },
+  {
+    "id": "glycol-propylene-4l",
+    "category": {
+      "sv": "Kylvätska",
+      "en": "Coolants"
+    },
+    "name": {
+      "sv": "Miljövänlig glykol 4 l",
+      "en": "Eco-friendly glycol 4 L"
+    },
+    "description": {
+      "sv": "Propylenglykol, färdigblandad. Biologiskt nedbrytbar och mindre giftig än etylenglykol. För slutna kylsystem och frostskydd ombord.",
+      "en": "Propylene glycol, ready mixed. Biodegradable and less toxic than ethylene glycol. For closed cooling systems and frost protection onboard."
+    },
+    "image": "/images/products/glycol-propylene-4l.jpg",
+    "price": 329,
+    "currency": "SEK",
+    "quantity": 14,
+    "inStock": true
+  },
+  {
+    "id": "oil-4stroke-10w30-4l",
+    "category": {
+      "sv": "Motorolja",
+      "en": "Engine oils"
+    },
+    "name": {
+      "sv": "4-takts utombordsolja 10W-30, 4 l",
+      "en": "4-stroke outboard oil 10W-30, 4 L"
+    },
+    "description": {
+      "sv": "NMMA FC-W 10W-30. Den vanligaste oljan till moderna 4-takts utombordare från Yamaha, Honda, Suzuki och Mercury.",
+      "en": "NMMA FC-W 10W-30. The most common oil for modern 4-stroke outboards from Yamaha, Honda, Suzuki and Mercury."
+    },
+    "image": "/images/products/oil-4stroke-10w30-4l.jpg",
+    "price": 579,
+    "currency": "SEK",
+    "quantity": 18,
+    "inStock": true
+  },
+  {
+    "id": "oil-2stroke-tcw3-1l",
+    "category": {
+      "sv": "Motorolja",
+      "en": "Engine oils"
+    },
+    "name": {
+      "sv": "2-takts utombordsolja TC-W3, 1 l",
+      "en": "2-stroke outboard oil TC-W3, 1 L"
+    },
+    "description": {
+      "sv": "Askfri TC-W3 blandolja till 2-takts utombordare. Blandas i bensinen enligt motorns rekommendation, ofta 50:1.",
+      "en": "Ashless TC-W3 mix oil for 2-stroke outboards. Mix with petrol per the engine recommendation, often 50:1."
+    },
+    "image": "/images/products/oil-2stroke-tcw3-1l.jpg",
+    "price": 179,
+    "currency": "SEK",
+    "quantity": 26,
+    "inStock": true
+  },
+  {
+    "id": "oil-diesel-15w40-5l",
+    "category": {
+      "sv": "Motorolja",
+      "en": "Engine oils"
+    },
+    "name": {
+      "sv": "Marin dieselolja 15W-40, 5 l",
+      "en": "Marine diesel oil 15W-40, 5 L"
+    },
+    "description": {
+      "sv": "15W-40 till inombordare diesel. Vanlig serviceolja till Volvo Penta, Yanmar och liknande båtdieslar.",
+      "en": "15W-40 for inboard diesels. Common service oil for Volvo Penta, Yanmar and similar marine diesels."
+    },
+    "image": "/images/products/oil-diesel-15w40-5l.jpg",
+    "price": 449,
+    "currency": "SEK",
+    "quantity": 12,
+    "inStock": true
+  },
+  {
+    "id": "filter-outboard-4stroke",
+    "category": {
+      "sv": "Oljefilter",
+      "en": "Oil filters"
+    },
+    "name": {
+      "sv": "Oljefilter 4-takts utombordare",
+      "en": "Oil filter 4-stroke outboard"
+    },
+    "description": {
+      "sv": "Spin-on-filter till vanliga 4-takts utombordare, t.ex. Yamaha, Honda och Suzuki. Kontrollera passform mot motormodell.",
+      "en": "Spin-on filter for common 4-stroke outboards, e.g. Yamaha, Honda and Suzuki. Check fitment against engine model."
+    },
+    "image": "/images/products/filter-outboard-4stroke.jpg",
+    "price": 119,
+    "currency": "SEK",
+    "quantity": 31,
+    "inStock": true
+  },
+  {
+    "id": "filter-inboard-diesel",
+    "category": {
+      "sv": "Oljefilter",
+      "en": "Oil filters"
+    },
+    "name": {
+      "sv": "Oljefilter inombordare diesel",
+      "en": "Oil filter inboard diesel"
+    },
+    "description": {
+      "sv": "Oljefilter till vanliga inombordare diesel, t.ex. Volvo Penta. Byt vid varje oljeservice.",
+      "en": "Oil filter for common inboard diesels, e.g. Volvo Penta. Replace at every oil service."
+    },
+    "image": "/images/products/filter-inboard-diesel.jpg",
+    "price": 189,
+    "currency": "SEK",
+    "quantity": 17,
+    "inStock": true
+  },
+  {
+    "id": "filter-mercury-4stroke",
+    "category": {
+      "sv": "Oljefilter",
+      "en": "Oil filters"
+    },
+    "name": {
+      "sv": "Oljefilter Mercury 4-takt",
+      "en": "Oil filter Mercury 4-stroke"
+    },
+    "description": {
+      "sv": "Spin-on-filter till Mercury och Mercruiser 4-takt. Ett av de mest sålda filtren till utombordare.",
+      "en": "Spin-on filter for Mercury and Mercruiser 4-stroke. One of the best-selling outboard filters."
+    },
+    "image": "/images/products/filter-mercury-4stroke.jpg",
+    "price": 149,
+    "currency": "SEK",
+    "quantity": 22,
+    "inStock": true
   }
 ]
