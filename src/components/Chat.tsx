@@ -1,9 +1,11 @@
 "use client";
 
 import { useChat } from "@ai-sdk/react";
-import { useTranslations } from "next-intl";
+import { hasLocale, useLocale, useTranslations } from "next-intl";
 import { DefaultChatTransport, isTextUIPart } from "ai";
 import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
+import { renderTextWithLinks } from "@/lib/chat/render-text-with-links";
+import { routing } from "@/i18n/routing";
 import { MAX_MESSAGE_LENGTH, type ChatUIMessage } from "@/types/chat";
 
 function getMessageText(message: ChatUIMessage): string {
@@ -60,12 +62,20 @@ type ChatProps = {
 
 export default function Chat({ onClose }: ChatProps) {
   const t = useTranslations();
+  const requestedLocale = useLocale();
+  const locale = hasLocale(routing.locales, requestedLocale)
+    ? requestedLocale
+    : routing.defaultLocale;
   const [input, setInput] = useState("");
   const { scrollerRef, contentRef, onScroll, pinToBottom } = useStickToBottom();
 
   const transport = useMemo(
-    () => new DefaultChatTransport({ api: "/api/chat" }),
-    [],
+    () =>
+      new DefaultChatTransport({
+        api: "/api/chat",
+        body: { locale },
+      }),
+    [locale],
   );
 
   const { messages, sendMessage, status, error, clearError, stop } =
@@ -74,6 +84,10 @@ export default function Chat({ onClose }: ChatProps) {
     });
 
   const isBusy = status === "submitted" || status === "streaming";
+  const lastMessage = messages.at(-1);
+  const assistantHasStartedWriting =
+    lastMessage?.role === "assistant" && getMessageText(lastMessage).length > 0;
+  const showGenerating = isBusy && !assistantHasStartedWriting;
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -118,7 +132,7 @@ export default function Chat({ onClose }: ChatProps) {
           className="mx-auto flex w-full max-w-2xl flex-col gap-4"
         >
           {messages.length === 0 && (
-            <div className="rounded-xl border border-dashed border-purple-400/10 bg-purple-700 px-4 py-10 text-center text-sm text-textColor">
+            <div className="rounded-xl border border-dashed border-purple-400/10 bg-purple-700 px-4 py-5 text-center text-sm text-textColor">
               {t("common.empty")}
             </div>
           )}
@@ -126,6 +140,15 @@ export default function Chat({ onClose }: ChatProps) {
           {messages.map((message) => {
             const text = getMessageText(message);
             const isUser = message.role === "user";
+            const isPendingAssistant =
+              !isUser &&
+              !text &&
+              showGenerating &&
+              message.id === lastMessage?.id;
+
+            if (isPendingAssistant) {
+              return null;
+            }
 
             return (
               <div
@@ -144,11 +167,25 @@ export default function Chat({ onClose }: ChatProps) {
                       {t("common.assistantLabel")}
                     </p>
                   )}
-                  {text || <span className="text-textColor/40">...</span>}
+                  {text ? (
+                    <span>{renderTextWithLinks(text)}</span>
+                  ) : (
+                    <span className="text-textColor/40">...</span>
+                  )}
                 </div>
               </div>
             );
           })}
+
+          {showGenerating ? (
+            <div className="flex justify-start">
+              <div className="max-w-[85%] rounded-2xl border border-foreground/10 bg-foreground/3 px-4 py-3 text-sm leading-relaxed text-textColor">
+                <span className="text-textColor/40">
+                  {t("common.generating")}
+                </span>
+              </div>
+            </div>
+          ) : null}
 
           {error && (
             <div className="rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-700 dark:text-red-300">

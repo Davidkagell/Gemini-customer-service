@@ -17,5 +17,11 @@
     "products": "Products",
     "about": "About us",
     "contact": "Contact us"
+  },
+  "productsPage": {
+    "title": "Products",
+    "inStock": "{count} in stock",
+    "outOfStock": "Out of stock",
+    "backToProducts": "Back to products"
   }
 }

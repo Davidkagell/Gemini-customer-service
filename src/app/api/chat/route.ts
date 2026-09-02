@@ -1,8 +1,7 @@
-import {
-  createUIMessageStreamResponse,
-  type UIMessage,
-} from "ai";
-import { createChatStream } from "@/lib/chat/pipeline";
+import { hasLocale } from "next-intl";
+import type { UIMessage } from "ai";
+import { createChatResponse } from "@/lib/chat/pipeline";
+import { routing } from "@/i18n/routing";
 import {
   MAX_MESSAGE_LENGTH,
   type ChatUIMessage,
@@ -14,6 +13,14 @@ function getTextFromMessage(message: UIMessage): string {
     .map((part) => (part.type === "text" ? part.text : ""))
     .join("")
     .trim();
+}
+
+function parseLocale(value: unknown) {
+  if (typeof value === "string" && hasLocale(routing.locales, value)) {
+    return value;
+  }
+
+  return routing.defaultLocale;
 }
 
 function missingApiKey(): string | null {
@@ -35,6 +42,7 @@ export async function POST(req: Request) {
 
     const body = await req.json();
     const messages = (body?.messages ?? []) as ChatUIMessage[];
+    const locale = parseLocale(body?.locale);
 
     if (!Array.isArray(messages) || messages.length === 0) {
       return Response.json(
@@ -71,8 +79,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const stream = createChatStream(messages);
-    return createUIMessageStreamResponse({ stream });
+    return createChatResponse(messages, locale);
   } catch (error) {
     const message =
       error instanceof Error ? error.message : "Kunde inte starta chatten.";

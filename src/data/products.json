@@ -1,0 +1,366 @@
+[
+  {
+    "id": "anchor-plough-5kg",
+    "category": { "sv": "Ankare", "en": "Anchors" },
+    "name": { "sv": "Plogankare 5 kg", "en": "Plough anchor 5 kg" },
+    "description": {
+      "sv": "Galvaniserat plogankare för båtar upp till ca 25 fot. Bra fäste i lera och sand.",
+      "en": "Galvanized plough anchor for boats up to about 25 ft. Holds well in mud and sand."
+    },
+    "image": "/images/products/anchor-plough-5kg.jpg",
+    "price": 899,
+    "currency": "SEK",
+    "quantity": 12,
+    "inStock": true
+  },
+  {
+    "id": "anchor-plough-10kg",
+    "category": { "sv": "Ankare", "en": "Anchors" },
+    "name": { "sv": "Plogankare 10 kg", "en": "Plough anchor 10 kg" },
+    "description": {
+      "sv": "Tyngre plogankare för båtar runt 28–35 fot. Extra hållkraft i blåst.",
+      "en": "Heavier plough anchor for boats around 28–35 ft. Extra holding power in wind."
+    },
+    "image": "/images/products/anchor-plough-10kg.jpg",
+    "price": 1490,
+    "currency": "SEK",
+    "quantity": 6,
+    "inStock": true
+  },
+  {
+    "id": "anchor-bruce-7-5kg",
+    "category": { "sv": "Ankare", "en": "Anchors" },
+    "name": { "sv": "Klöverkloankare 7,5 kg", "en": "Claw anchor 7.5 kg" },
+    "description": {
+      "sv": "Klöverkloankare som sätter sig snabbt. Lämpligt för blandad botten.",
+      "en": "Claw anchor that sets quickly. Suitable for mixed seabeds."
+    },
+    "image": "/images/products/anchor-bruce-7-5kg.jpg",
+    "price": 1195,
+    "currency": "SEK",
+    "quantity": 0,
+    "inStock": false
+  },
+  {
+    "id": "anchor-chain-8mm-20m",
+    "category": { "sv": "Ankare", "en": "Anchors" },
+    "name": { "sv": "Ankarkätting 8 mm, 20 m", "en": "Anchor chain 8 mm, 20 m" },
+    "description": {
+      "sv": "Galvaniserad kätting 8 mm. Använd som första del av ankarlinan för bättre fäste.",
+      "en": "Galvanized 8 mm chain. Use as the first section of the rode for better holding."
+    },
+    "image": "/images/products/anchor-chain-8mm-20m.jpg",
+    "price": 1290,
+    "currency": "SEK",
+    "quantity": 9,
+    "inStock": true
+  },
+  {
+    "id": "prop-aluminium-13x19",
+    "category": { "sv": "Propellrar", "en": "Propellers" },
+    "name": { "sv": "Aluminiumpropeller 13×19", "en": "Aluminium propeller 13×19" },
+    "description": {
+      "sv": "3-bladig aluminiumpropeller för utombordare. Standardpitch för fritidsbåtar.",
+      "en": "3-blade aluminium propeller for outboards. Standard pitch for leisure boats."
+    },
+    "image": "/images/products/prop-aluminium-13x19.jpg",
+    "price": 1890,
+    "currency": "SEK",
+    "quantity": 4,
+    "inStock": true
+  },
+  {
+    "id": "prop-aluminium-14x21",
+    "category": { "sv": "Propellrar", "en": "Propellers" },
+    "name": { "sv": "Aluminiumpropeller 14×21", "en": "Aluminium propeller 14×21" },
+    "description": {
+      "sv": "Större diameter och pitch för tyngre båtar och bättre acceleration.",
+      "en": "Larger diameter and pitch for heavier boats and better acceleration."
+    },
+    "image": "/images/products/prop-aluminium-14x21.jpg",
+    "price": 2190,
+    "currency": "SEK",
+    "quantity": 3,
+    "inStock": true
+  },
+  {
+    "id": "prop-stainless-13x19",
+    "category": { "sv": "Propellrar", "en": "Propellers" },
+    "name": { "sv": "Rostfri propeller 13×19", "en": "Stainless propeller 13×19" },
+    "description": {
+      "sv": "Rostfritt stål för längre livslängd i saltvatten.",
+      "en": "Stainless steel for longer life in salt water."
+    },
+    "image": "/images/products/prop-stainless-13x19.jpg",
+    "price": 3490,
+    "currency": "SEK",
+    "quantity": 2,
+    "inStock": true
+  },
+  {
+    "id": "prop-hub-kit",
+    "category": { "sv": "Propellrar", "en": "Propellers" },
+    "name": { "sv": "Propellerhubb-kit", "en": "Propeller hub kit" },
+    "description": {
+      "sv": "Utbytbart nav för att passa flera motorfabrikat.",
+      "en": "Interchangeable hub to fit several motor brands."
+    },
+    "image": "/images/products/prop-hub-kit.jpg",
+    "price": 495,
+    "currency": "SEK",
+    "quantity": 8,
+    "inStock": true
+  },
+  {
+    "id": "rope-polyester-14mm-50m",
+    "category": { "sv": "Tampar", "en": "Ropes" },
+    "name": { "sv": "Polyestertamp 14 mm, 50 m", "en": "Polyester rope 14 mm, 50 m" },
+    "description": {
+      "sv": "Lågsträck polyester för förtöjning. UV-beständig.",
+      "en": "Low-stretch polyester for mooring. UV resistant."
+    },
+    "image": "/images/products/rope-polyester-14mm-50m.jpg",
+    "price": 890,
+    "currency": "SEK",
+    "quantity": 7,
+    "inStock": true
+  },
+  {
+    "id": "rope-anchor-16mm-30m",
+    "category": { "sv": "Tampar", "en": "Ropes" },
+    "name": { "sv": "Ankarlina 16 mm, 30 m", "en": "Anchor rode 16 mm, 30 m" },
+    "description": {
+      "sv": "Nylon med bra elasticitet för ankarförtöjning.",
+      "en": "Nylon with good elasticity for anchoring."
+    },
+    "image": "/images/products/rope-anchor-16mm-30m.jpg",
+    "price": 1290,
+    "currency": "SEK",
+    "quantity": 5,
+    "inStock": true
+  },
+  {
+    "id": "fender-line-8mm-2m",
+    "category": { "sv": "Tampar", "en": "Ropes" },
+    "name": { "sv": "Fenderlina 8 mm, 2 m", "en": "Fender line 8 mm, 2 m" },
+    "description": {
+      "sv": "Färdig fenderlina med ögla. Säljs styckvis.",
+      "en": "Ready-made fender line with eye splice. Sold individually."
+    },
+    "image": "/images/products/fender-line-8mm-2m.jpg",
+    "price": 89,
+    "currency": "SEK",
+    "quantity": 24,
+    "inStock": true
+  },
+  {
+    "id": "light-nav-led-tricolour",
+    "category": { "sv": "Lanternor", "en": "Navigation lights" },
+    "name": { "sv": "LED-trikolorlanterna", "en": "LED tricolour navigation light" },
+    "description": {
+      "sv": "Kombinerad topp-/aktersidelanterna enligt COLREGS.",
+      "en": "Combined masthead/stern light per COLREGS."
+    },
+    "image": "/images/products/light-nav-led-tricolour.jpg",
+    "price": 1590,
+    "currency": "SEK",
+    "quantity": 4,
+    "inStock": true
+  },
+  {
+    "id": "light-nav-port-starboard",
+    "category": { "sv": "Lanternor", "en": "Navigation lights" },
+    "name": { "sv": "LED babord/styrbord", "en": "LED port/starboard lights" },
+    "description": {
+      "sv": "Par med röd och grön sidolanterna. 12 V.",
+      "en": "Pair of red and green sidelights. 12 V."
+    },
+    "image": "/images/products/light-nav-port-starboard.jpg",
+    "price": 990,
+    "currency": "SEK",
+    "quantity": 6,
+    "inStock": true
+  },
+  {
+    "id": "light-stern-led",
+    "category": { "sv": "Lanternor", "en": "Navigation lights" },
+    "name": { "sv": "LED akterlanterna", "en": "LED stern light" },
+    "description": {
+      "sv": "Vit akterlanterna med låg strömförbrukning.",
+      "en": "White stern light with low power draw."
+    },
+    "image": "/images/products/light-stern-led.jpg",
+    "price": 590,
+    "currency": "SEK",
+    "quantity": 10,
+    "inStock": true
+  },
+  {
+    "id": "light-anchor-led",
+    "category": { "sv": "Lanternor", "en": "Navigation lights" },
+    "name": { "sv": "LED ankarlanterna", "en": "LED anchor light" },
+    "description": {
+      "sv": "360° vit ankarlanterna för nattlig förankring.",
+      "en": "360° white anchor light for night anchoring."
+    },
+    "image": "/images/products/light-anchor-led.jpg",
+    "price": 690,
+    "currency": "SEK",
+    "quantity": 8,
+    "inStock": true
+  },
+  {
+    "id": "pump-bilge-12v-47l",
+    "category": { "sv": "Pumpar", "en": "Pumps" },
+    "name": { "sv": "Länspump 12 V, 47 l/min", "en": "Bilge pump 12 V, 47 l/min" },
+    "description": {
+      "sv": "Automatisk länspump med flytande brytare.",
+      "en": "Automatic bilge pump with float switch."
+    },
+    "image": "/images/products/pump-bilge-12v-47l.jpg",
+    "price": 1190,
+    "currency": "SEK",
+    "quantity": 5,
+    "inStock": true
+  },
+  {
+    "id": "pump-bilge-12v-76l",
+    "category": { "sv": "Pumpar", "en": "Pumps" },
+    "name": { "sv": "Länspump 12 V, 76 l/min", "en": "Bilge pump 12 V, 76 l/min" },
+    "description": {
+      "sv": "Kraftigare länspump för större båtar.",
+      "en": "Higher-capacity bilge pump for larger boats."
+    },
+    "image": "/images/products/pump-bilge-12v-76l.jpg",
+    "price": 1690,
+    "currency": "SEK",
+    "quantity": 3,
+    "inStock": true
+  },
+  {
+    "id": "pump-manual-diaphragm",
+    "category": { "sv": "Pumpar", "en": "Pumps" },
+    "name": { "sv": "Manuell membranpump", "en": "Manual diaphragm pump" },
+    "description": {
+      "sv": "Backup-pump för nödlänspning utan el.",
+      "en": "Backup pump for emergency dewatering without power."
+    },
+    "image": "/images/products/pump-manual-diaphragm.jpg",
+    "price": 790,
+    "currency": "SEK",
+    "quantity": 6,
+    "inStock": true
+  },
+  {
+    "id": "pump-freshwater-12v",
+    "category": { "sv": "Pumpar", "en": "Pumps" },
+    "name": { "sv": "Färskvattenpump 12 V", "en": "Freshwater pump 12 V" },
+    "description": {
+      "sv": "Tryckpump för däcksdusch och köksblandare.",
+      "en": "Pressure pump for deck shower and galley tap."
+    },
+    "image": "/images/products/pump-freshwater-12v.jpg",
+    "price": 1390,
+    "currency": "SEK",
+    "quantity": 4,
+    "inStock": true
+  },
+  {
+    "id": "elec-battery-switch",
+    "category": { "sv": "Elektronik", "en": "Electronics" },
+    "name": { "sv": "Batteribrytare", "en": "Battery switch" },
+    "description": {
+      "sv": "Tung brytare för start- och förbrukningsbatteri.",
+      "en": "Heavy-duty switch for start and house batteries."
+    },
+    "image": "/images/products/elec-battery-switch.jpg",
+    "price": 490,
+    "currency": "SEK",
+    "quantity": 11,
+    "inStock": true
+  },
+  {
+    "id": "elec-fuse-panel-6",
+    "category": { "sv": "Elektronik", "en": "Electronics" },
+    "name": { "sv": "Säkringstavla 6 vägar", "en": "Fuse panel 6-way" },
+    "description": {
+      "sv": "Marin säkringstavla med LED-indikering.",
+      "en": "Marine fuse panel with LED indicators."
+    },
+    "image": "/images/products/elec-fuse-panel-6.jpg",
+    "price": 890,
+    "currency": "SEK",
+    "quantity": 7,
+    "inStock": true
+  },
+  {
+    "id": "elec-usb-charger",
+    "category": { "sv": "Elektronik", "en": "Electronics" },
+    "name": { "sv": "USB-laddare 12 V dubbel", "en": "Dual USB charger 12 V" },
+    "description": {
+      "sv": "Vattentät USB-C och USB-A för cockpit.",
+      "en": "Waterproof USB-C and USB-A for the cockpit."
+    },
+    "image": "/images/products/elec-usb-charger.jpg",
+    "price": 590,
+    "currency": "SEK",
+    "quantity": 14,
+    "inStock": true
+  },
+  {
+    "id": "elec-nav-display-7",
+    "category": { "sv": "Elektronik", "en": "Electronics" },
+    "name": { "sv": "Sjökortplotter 7\"", "en": "Chartplotter 7\"" },
+    "description": {
+      "sv": "GPS-plotter med inbyggd sonar. Inkluderar fäste.",
+      "en": "GPS plotter with built-in sonar. Mount included."
+    },
+    "image": "/images/products/elec-nav-display-7.jpg",
+    "price": 8990,
+    "currency": "SEK",
+    "quantity": 2,
+    "inStock": true
+  },
+  {
+    "id": "safety-fender-20x60",
+    "category": { "sv": "Säkerhet", "en": "Safety" },
+    "name": { "sv": "Fender 20×60 cm", "en": "Fender 20×60 cm" },
+    "description": {
+      "sv": "Cylinderfender i hårdgummi med ventil.",
+      "en": "Cylindrical hard-rubber fender with valve."
+    },
+    "image": "/images/products/safety-fender-20x60.jpg",
+    "price": 290,
+    "currency": "SEK",
+    "quantity": 18,
+    "inStock": true
+  },
+  {
+    "id": "safety-lifejacket-150n",
+    "category": { "sv": "Säkerhet", "en": "Safety" },
+    "name": { "sv": "Flytväst 150 N", "en": "Life jacket 150 N" },
+    "description": {
+      "sv": "Vuxenflytväst med snabbspänne och reflex.",
+      "en": "Adult life jacket with quick buckle and reflector."
+    },
+    "image": "/images/products/safety-lifejacket-150n.jpg",
+    "price": 690,
+    "currency": "SEK",
+    "quantity": 9,
+    "inStock": true
+  },
+  {
+    "id": "safety-throwline-20m",
+    "category": { "sv": "Säkerhet", "en": "Safety" },
+    "name": { "sv": "Kastlina 20 m", "en": "Throw line 20 m" },
+    "description": {
+      "sv": "Flytande kastlina i påse för man överbord.",
+      "en": "Floating throw line in bag for man overboard."
+    },
+    "image": "/images/products/safety-throwline-20m.jpg",
+    "price": 490,
+    "currency": "SEK",
+    "quantity": 6,
+    "inStock": true
+  }
+]

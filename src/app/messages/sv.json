@@ -17,5 +17,11 @@
     "products": "Produkter",
     "about": "Om oss",
     "contact": "Kontakta oss"
+  },
+  "productsPage": {
+    "title": "Produkter",
+    "inStock": "{count} st i lager",
+    "outOfStock": "Slut i lager",
+    "backToProducts": "Tillbaka till produkter"
   }
 }
