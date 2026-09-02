@@ -5,6 +5,8 @@ export type LocalizedText = {
 
 export type Product = {
   id: string;
+  manufacturer: string;
+  articleNumber: string;
   category: LocalizedText;
   name: LocalizedText;
   description: LocalizedText;
@@ -18,6 +20,8 @@ export type Product = {
 export type ProductSearchResult = {
   id: string;
   name: string;
+  manufacturer: string;
+  articleNumber: string;
   category: string;
   price: number;
   currency: string;

@@ -24,6 +24,7 @@
     "title": "Produkter",
     "inStock": "{count} st i lager",
     "outOfStock": "Slut i lager",
+    "articleNumber": "{manufacturer} art.nr {number}",
     "backToProducts": "Tillbaka till produkter"
   },
   "aboutPage": {

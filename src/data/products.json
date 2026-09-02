@@ -1,17 +1,19 @@
 [
   {
     "id": "anchor-plough-5kg",
+    "manufacturer": "Lewmar",
+    "articleNumber": "0057406",
     "category": {
       "sv": "Ankare",
       "en": "Anchors"
     },
     "name": {
-      "sv": "Plogankare 5 kg",
-      "en": "Plough anchor 5 kg"
+      "sv": "Lewmar Delta 6 kg",
+      "en": "Lewmar Delta 6 kg"
     },
     "description": {
-      "sv": "Galvaniserat plogankare för båtar upp till ca 25 fot. Bra fäste i lera och sand.",
-      "en": "Galvanized plough anchor for boats up to about 25 ft. Holds well in mud and sand."
+      "sv": "Galvaniserat plogankare Delta för båtar upp till ca 25 fot. Bra fäste i lera och sand.",
+      "en": "Galvanized Delta plough anchor for boats up to about 25 ft. Holds well in mud and sand."
     },
     "image": "/images/products/anchor-plough-5kg.jpg",
     "price": 899,
@@ -21,17 +23,19 @@
   },
   {
     "id": "anchor-plough-10kg",
+    "manufacturer": "Lewmar",
+    "articleNumber": "0057410",
     "category": {
       "sv": "Ankare",
       "en": "Anchors"
     },
     "name": {
-      "sv": "Plogankare 10 kg",
-      "en": "Plough anchor 10 kg"
+      "sv": "Lewmar Delta 10 kg",
+      "en": "Lewmar Delta 10 kg"
     },
     "description": {
-      "sv": "Tyngre plogankare för båtar runt 28–35 fot. Extra hållkraft i blåst.",
-      "en": "Heavier plough anchor for boats around 28–35 ft. Extra holding power in wind."
+      "sv": "Tyngre Delta-plogankare för båtar runt 28–35 fot. Extra hållkraft i blåst.",
+      "en": "Heavier Delta plough anchor for boats around 28–35 ft. Extra holding power in wind."
     },
     "image": "/images/products/anchor-plough-10kg.jpg",
     "price": 1490,
@@ -41,13 +45,15 @@
   },
   {
     "id": "anchor-bruce-7-5kg",
+    "manufacturer": "Lewmar",
+    "articleNumber": "0057907",
     "category": {
       "sv": "Ankare",
       "en": "Anchors"
     },
     "name": {
-      "sv": "Klöverkloankare 7,5 kg",
-      "en": "Claw anchor 7.5 kg"
+      "sv": "Lewmar Claw 7,5 kg",
+      "en": "Lewmar Claw 7.5 kg"
     },
     "description": {
       "sv": "Klöverkloankare som sätter sig snabbt. Lämpligt för blandad botten.",
@@ -61,6 +67,8 @@
   },
   {
     "id": "anchor-chain-8mm-20m",
+    "manufacturer": "Osculati",
+    "articleNumber": "01.376.08",
     "category": {
       "sv": "Ankare",
       "en": "Anchors"
@@ -70,8 +78,8 @@
       "en": "Anchor chain 8 mm, 20 m"
     },
     "description": {
-      "sv": "Galvaniserad kätting 8 mm. Använd som första del av ankarlinan för bättre fäste.",
-      "en": "Galvanized 8 mm chain. Use as the first section of the rode for better holding."
+      "sv": "Galvaniserad kalibrerad kätting 8 mm DIN 766, 20 m. Använd som första del av ankarlinan för bättre fäste.",
+      "en": "Galvanized calibrated 8 mm DIN 766 chain, 20 m. Use as the first section of the rode for better holding."
     },
     "image": "/images/products/anchor-chain-8mm-20m.jpg",
     "price": 1290,
@@ -81,13 +89,15 @@
   },
   {
     "id": "prop-aluminium-13x19",
+    "manufacturer": "Solas",
+    "articleNumber": "3411-130-19",
     "category": {
       "sv": "Propellrar",
       "en": "Propellers"
     },
     "name": {
-      "sv": "Aluminiumpropeller 13x19",
-      "en": "Aluminium propeller 13x19"
+      "sv": "Solas Amita 13x19 aluminium",
+      "en": "Solas Amita 13x19 aluminium"
     },
     "description": {
       "sv": "3-bladig aluminiumpropeller, diameter 13 tum, stigning 19. Högergående.",
@@ -101,17 +111,19 @@
   },
   {
     "id": "prop-aluminium-14x21",
+    "manufacturer": "Solas",
+    "articleNumber": "1511-140-21",
     "category": {
       "sv": "Propellrar",
       "en": "Propellers"
     },
     "name": {
-      "sv": "Aluminiumpropeller 14x21",
-      "en": "Aluminium propeller 14x21"
+      "sv": "Solas Amita 14x21 aluminium",
+      "en": "Solas Amita 14x21 aluminium"
     },
     "description": {
-      "sv": "Större aluminiumpropeller för tyngre motorbåtar. Högergående.",
-      "en": "Larger aluminium propeller for heavier motorboats. Right-hand rotation."
+      "sv": "3-bladig aluminiumpropeller 14x21 för Mercury/Mercruiser. Högergående.",
+      "en": "3-blade aluminium propeller 14x21 for Mercury/Mercruiser. Right-hand rotation."
     },
     "image": "/images/products/prop-aluminium-14x21.jpg",
     "price": 2490,
@@ -121,13 +133,15 @@
   },
   {
     "id": "prop-stainless-13x19",
+    "manufacturer": "Solas",
+    "articleNumber": "3311-130-19",
     "category": {
       "sv": "Propellrar",
       "en": "Propellers"
     },
     "name": {
-      "sv": "Rostfri propeller 13x19",
-      "en": "Stainless steel propeller 13x19"
+      "sv": "Solas Titan 13x19 rostfri",
+      "en": "Solas Titan 13x19 stainless"
     },
     "description": {
       "sv": "Rostfri 3-bladig propeller. Tåligare mot slag och ger ofta lite bättre toppfart.",
@@ -141,6 +155,8 @@
   },
   {
     "id": "prop-hub-kit",
+    "manufacturer": "Solas",
+    "articleNumber": "8011-115-13",
     "category": {
       "sv": "Propellrar",
       "en": "Propellers"
@@ -161,6 +177,8 @@
   },
   {
     "id": "rope-polyester-12mm-50m",
+    "manufacturer": "Liros",
+    "articleNumber": "01007-12",
     "category": {
       "sv": "Tampar",
       "en": "Ropes"
@@ -181,6 +199,8 @@
   },
   {
     "id": "rope-polyester-14mm-50m",
+    "manufacturer": "Liros",
+    "articleNumber": "01007-14",
     "category": {
       "sv": "Tampar",
       "en": "Ropes"
@@ -201,6 +221,8 @@
   },
   {
     "id": "rope-anchor-16mm-30m",
+    "manufacturer": "Liros",
+    "articleNumber": "00110-16",
     "category": {
       "sv": "Tampar",
       "en": "Ropes"
@@ -221,6 +243,8 @@
   },
   {
     "id": "fender-line-8mm-2m",
+    "manufacturer": "Liros",
+    "articleNumber": "00130-08",
     "category": {
       "sv": "Tampar",
       "en": "Ropes"
@@ -241,13 +265,15 @@
   },
   {
     "id": "light-nav-led-tricolour",
+    "manufacturer": "Aqua Signal",
+    "articleNumber": "3856001000",
     "category": {
       "sv": "Lanternor",
       "en": "Navigation lights"
     },
     "name": {
-      "sv": "LED-topplanta tre-färg",
-      "en": "LED tricolour masthead light"
+      "sv": "Aqua Signal Series 34 LED tre-färg",
+      "en": "Aqua Signal Series 34 LED tricolour"
     },
     "description": {
       "sv": "LED-lanterna med rött, grönt och vitt i ett hus. 12 V, låg strömförbrukning.",
@@ -261,17 +287,19 @@
   },
   {
     "id": "light-nav-port-starboard",
+    "manufacturer": "Aqua Signal",
+    "articleNumber": "3853001000 / 3852001000",
     "category": {
       "sv": "Lanternor",
       "en": "Navigation lights"
     },
     "name": {
-      "sv": "LED babord/styrbord-par",
-      "en": "LED port/starboard pair"
+      "sv": "Aqua Signal Series 34 LED babord/styrbord",
+      "en": "Aqua Signal Series 34 LED port/starboard"
     },
     "description": {
-      "sv": "Par lanternor för reling: röd babord och grön styrbord. 12 V LED.",
-      "en": "Pair of rail lights: red port and green starboard. 12 V LED."
+      "sv": "Par lanternor Series 34 för reling: babord 3853001000 och styrbord 3852001000. 12/24 V LED.",
+      "en": "Series 34 rail pair: port 3853001000 and starboard 3852001000. 12/24 V LED."
     },
     "image": "/images/products/light-nav-port-starboard.jpg",
     "price": 890,
@@ -281,13 +309,15 @@
   },
   {
     "id": "light-stern-led",
+    "manufacturer": "Aqua Signal",
+    "articleNumber": "3854001000",
     "category": {
       "sv": "Lanternor",
       "en": "Navigation lights"
     },
     "name": {
-      "sv": "LED-akterlanterna",
-      "en": "LED stern light"
+      "sv": "Aqua Signal Series 34 LED-akterlanterna",
+      "en": "Aqua Signal Series 34 LED stern light"
     },
     "description": {
       "sv": "Vit akterlanterna LED, 135 graders sektor. För 12 V-system.",
@@ -301,13 +331,15 @@
   },
   {
     "id": "light-anchor-led",
+    "manufacturer": "Aqua Signal",
+    "articleNumber": "3858001000",
     "category": {
       "sv": "Lanternor",
       "en": "Navigation lights"
     },
     "name": {
-      "sv": "LED-ankarlanterna",
-      "en": "LED anchor light"
+      "sv": "Aqua Signal Series 34 LED topp/ankarlanterna",
+      "en": "Aqua Signal Series 34 LED masthead/anchor light"
     },
     "description": {
       "sv": "Runtlysande vit ankarlanterna. Kan sitta i masttopp eller hissas i förstag.",
@@ -321,17 +353,19 @@
   },
   {
     "id": "pump-bilge-12v-47l",
+    "manufacturer": "Rule",
+    "articleNumber": "RM800A",
     "category": {
       "sv": "Pumpar",
       "en": "Pumps"
     },
     "name": {
-      "sv": "Länspump 12 V, 47 l/min",
-      "en": "Bilge pump 12 V, 47 l/min"
+      "sv": "Rule-Mate 800 länspump 12 V",
+      "en": "Rule-Mate 800 bilge pump 12 V"
     },
     "description": {
-      "sv": "Automatisk länspump med flottör. Kapacitet 47 liter per minut.",
-      "en": "Automatic bilge pump with float switch. Capacity 47 litres per minute."
+      "sv": "Automatisk länspump med inbyggd flottör. Ca 50 liter per minut (800 GPH).",
+      "en": "Automatic bilge pump with built-in float switch. About 50 litres per minute (800 GPH)."
     },
     "image": "/images/products/pump-bilge-12v-47l.jpg",
     "price": 695,
@@ -341,17 +375,19 @@
   },
   {
     "id": "pump-bilge-12v-76l",
+    "manufacturer": "Rule",
+    "articleNumber": "RM1100A",
     "category": {
       "sv": "Pumpar",
       "en": "Pumps"
     },
     "name": {
-      "sv": "Länspump 12 V, 76 l/min",
-      "en": "Bilge pump 12 V, 76 l/min"
+      "sv": "Rule-Mate 1100 länspump 12 V",
+      "en": "Rule-Mate 1100 bilge pump 12 V"
     },
     "description": {
-      "sv": "Kraftigare länspump för större båtar. 76 liter per minut, 12 V.",
-      "en": "Heavier bilge pump for larger boats. 76 litres per minute, 12 V."
+      "sv": "Kraftigare automatisk länspump för större båtar. Ca 69 liter per minut (1100 GPH), 12 V.",
+      "en": "Heavier automatic bilge pump for larger boats. About 69 litres per minute (1100 GPH), 12 V."
     },
     "image": "/images/products/pump-bilge-12v-76l.jpg",
     "price": 990,
@@ -361,13 +397,15 @@
   },
   {
     "id": "pump-manual-diaphragm",
+    "manufacturer": "Whale",
+    "articleNumber": "BP9013",
     "category": {
       "sv": "Pumpar",
       "en": "Pumps"
     },
     "name": {
-      "sv": "Manuell membranpump",
-      "en": "Manual diaphragm pump"
+      "sv": "Whale Gusher Urchin membranpump",
+      "en": "Whale Gusher Urchin diaphragm pump"
     },
     "description": {
       "sv": "Handdriven länspump som backup om elen går. Monteringsbar i sittbrunn.",
@@ -381,13 +419,15 @@
   },
   {
     "id": "pump-freshwater-12v",
+    "manufacturer": "Jabsco",
+    "articleNumber": "Q301J-118S-3A",
     "category": {
       "sv": "Pumpar",
       "en": "Pumps"
     },
     "name": {
-      "sv": "Sötvattenpump 12 V",
-      "en": "Freshwater pump 12 V"
+      "sv": "Jabsco Par-Max 3 sötvattenpump 12 V",
+      "en": "Jabsco Par-Max 3 freshwater pump 12 V"
     },
     "description": {
       "sv": "Tryckvattenpump till disk och dusch ombord. Självsugande, 12 V.",
@@ -401,13 +441,15 @@
   },
   {
     "id": "elec-battery-switch",
+    "manufacturer": "Blue Sea Systems",
+    "articleNumber": "6006",
     "category": {
       "sv": "Elektronik",
       "en": "Electronics"
     },
     "name": {
-      "sv": "Huvudströmbrytare 300 A",
-      "en": "Battery switch 300 A"
+      "sv": "Blue Sea m-Series huvudströmbrytare 300 A",
+      "en": "Blue Sea m-Series battery switch 300 A"
     },
     "description": {
       "sv": "Huvudbrytare för 12 V-system, 300 A kontinuerligt. Med frånskiljarläge.",
@@ -421,13 +463,15 @@
   },
   {
     "id": "elec-fuse-panel-6",
+    "manufacturer": "Blue Sea Systems",
+    "articleNumber": "5025",
     "category": {
       "sv": "Elektronik",
       "en": "Electronics"
     },
     "name": {
-      "sv": "Säkringspanel 6 kretsar",
-      "en": "Fuse panel 6 circuits"
+      "sv": "Blue Sea ST Blade säkringspanel 6 kretsar",
+      "en": "Blue Sea ST Blade fuse panel 6 circuits"
     },
     "description": {
       "sv": "Vattentät säkringspanel med LED-indikering. 6 kretsar, 12 V.",
@@ -441,13 +485,15 @@
   },
   {
     "id": "elec-usb-charger",
+    "manufacturer": "Blue Sea Systems",
+    "articleNumber": "1048",
     "category": {
       "sv": "Elektronik",
       "en": "Electronics"
     },
     "name": {
-      "sv": "USB-laddare 12 V, dubbel",
-      "en": "USB charger 12 V, dual"
+      "sv": "Blue Sea USB-laddare 12 V, USB-A/USB-C",
+      "en": "Blue Sea USB charger 12 V, USB-A/USB-C"
     },
     "description": {
       "sv": "Infälld dubbel USB-A/USB-C för 12 V. För telefon och surfplatta ombord.",
@@ -461,13 +507,15 @@
   },
   {
     "id": "elec-nav-display-7",
+    "manufacturer": "Garmin",
+    "articleNumber": "010-02365-00",
     "category": {
       "sv": "Elektronik",
       "en": "Electronics"
     },
     "name": {
-      "sv": "Plotter 7 tum",
-      "en": "Chartplotter 7 inch"
+      "sv": "Garmin GPSMAP 723, 7 tum",
+      "en": "Garmin GPSMAP 723, 7 inch"
     },
     "description": {
       "sv": "Kartplotter 7 tum med GPS. Underlagskarta ingår, sjökort köps separat.",
@@ -481,17 +529,19 @@
   },
   {
     "id": "safety-fender-20x60",
+    "manufacturer": "Polyform",
+    "articleNumber": "F-2",
     "category": {
       "sv": "Säkerhet & fendrar",
       "en": "Safety & fenders"
     },
     "name": {
-      "sv": "Fender 20 x 60 cm",
-      "en": "Fender 20 x 60 cm"
+      "sv": "Polyform F-2 fender 22 x 61 cm",
+      "en": "Polyform F-2 fender 22 x 61 cm"
     },
     "description": {
-      "sv": "Cylindrisk fender, 20 x 60 cm. Vit. Passar båtar runt 25–32 fot.",
-      "en": "Cylindrical fender, 20 x 60 cm. White. Fits boats around 25–32 ft."
+      "sv": "Cylindrisk fender F-2, 22 x 61 cm. Vit. Passar båtar runt 25–32 fot.",
+      "en": "Cylindrical F-2 fender, 22 x 61 cm. White. Fits boats around 25–32 ft."
     },
     "image": "/images/products/safety-fender-20x60.jpg",
     "price": 279,
@@ -501,13 +551,15 @@
   },
   {
     "id": "safety-lifejacket-150n",
+    "manufacturer": "Baltic",
+    "articleNumber": "1585",
     "category": {
       "sv": "Säkerhet & fendrar",
       "en": "Safety & fenders"
     },
     "name": {
-      "sv": "Flytväst 150 N, vuxen",
-      "en": "Lifejacket 150 N, adult"
+      "sv": "Baltic Winner flytväst 150 N, vuxen",
+      "en": "Baltic Winner lifejacket 150 N, adult"
     },
     "description": {
       "sv": "Automatisk flytväst 150 N, one size vuxen. Med grenband och reflex.",
@@ -521,13 +573,15 @@
   },
   {
     "id": "safety-throwline-20m",
+    "manufacturer": "Plastimo",
+    "articleNumber": "36554",
     "category": {
       "sv": "Säkerhet & fendrar",
       "en": "Safety & fenders"
     },
     "name": {
-      "sv": "Räddningslina 20 m",
-      "en": "Throw line 20 m"
+      "sv": "Plastimo räddningslina 20 m",
+      "en": "Plastimo throw line 20 m"
     },
     "description": {
       "sv": "Flytande räddningslina 20 m i påse. Ska sitta lättillgänglig i sittbrunnen.",
@@ -541,17 +595,19 @@
   },
   {
     "id": "glycol-propylene-4l",
+    "manufacturer": "Star brite",
+    "articleNumber": "31200",
     "category": {
       "sv": "Kylvätska",
       "en": "Coolants"
     },
     "name": {
-      "sv": "Miljövänlig glykol 4 l",
-      "en": "Eco-friendly glycol 4 L"
+      "sv": "Star brite Winter Safe glykol 3,8 l",
+      "en": "Star brite Winter Safe glycol 3.8 L"
     },
     "description": {
-      "sv": "Propylenglykol, färdigblandad. Biologiskt nedbrytbar och mindre giftig än etylenglykol. För slutna kylsystem och frostskydd ombord.",
-      "en": "Propylene glycol, ready mixed. Biodegradable and less toxic than ethylene glycol. For closed cooling systems and frost protection onboard."
+      "sv": "Propylenglykol, färdigblandad (1 US gallon). Biologiskt nedbrytbar och mindre giftig än etylenglykol. För frostskydd av kylsystem och vattensystem ombord.",
+      "en": "Propylene glycol, ready mixed (1 US gallon). Biodegradable and less toxic than ethylene glycol. For freeze protection of cooling and water systems onboard."
     },
     "image": "/images/products/glycol-propylene-4l.jpg",
     "price": 329,
@@ -561,17 +617,19 @@
   },
   {
     "id": "oil-4stroke-10w30-4l",
+    "manufacturer": "Yamaha",
+    "articleNumber": "YMD-63050-04-00",
     "category": {
       "sv": "Motorolja",
       "en": "Engine oils"
     },
     "name": {
-      "sv": "4-takts utombordsolja 10W-30, 4 l",
-      "en": "4-stroke outboard oil 10W-30, 4 L"
+      "sv": "Yamalube 10W-30 4-takt, 4 l",
+      "en": "Yamalube 10W-30 4-stroke, 4 L"
     },
     "description": {
-      "sv": "NMMA FC-W 10W-30. Den vanligaste oljan till moderna 4-takts utombordare från Yamaha, Honda, Suzuki och Mercury.",
-      "en": "NMMA FC-W 10W-30. The most common oil for modern 4-stroke outboards from Yamaha, Honda, Suzuki and Mercury."
+      "sv": "Yamaha Yamalube syntetisk 10W-30 för 4-takts utombordare. Passar Yamaha och andra 4-takts utombordare enligt motorns specifikation.",
+      "en": "Yamaha Yamalube synthetic 10W-30 for 4-stroke outboards. Fits Yamaha and other 4-stroke outboards per the engine specification."
     },
     "image": "/images/products/oil-4stroke-10w30-4l.jpg",
     "price": 579,
@@ -581,13 +639,15 @@
   },
   {
     "id": "oil-2stroke-tcw3-1l",
+    "manufacturer": "Yamaha",
+    "articleNumber": "YMD-63021-01-A5",
     "category": {
       "sv": "Motorolja",
       "en": "Engine oils"
     },
     "name": {
-      "sv": "2-takts utombordsolja TC-W3, 1 l",
-      "en": "2-stroke outboard oil TC-W3, 1 L"
+      "sv": "Yamalube 2-M TC-W3, 1 l",
+      "en": "Yamalube 2-M TC-W3, 1 L"
     },
     "description": {
       "sv": "Askfri TC-W3 blandolja till 2-takts utombordare. Blandas i bensinen enligt motorns rekommendation, ofta 50:1.",
@@ -601,17 +661,19 @@
   },
   {
     "id": "oil-diesel-15w40-5l",
+    "manufacturer": "Volvo Penta",
+    "articleNumber": "23909454",
     "category": {
       "sv": "Motorolja",
       "en": "Engine oils"
     },
     "name": {
-      "sv": "Marin dieselolja 15W-40, 5 l",
-      "en": "Marine diesel oil 15W-40, 5 L"
+      "sv": "Volvo Penta VDS-3 15W-40, 5 l",
+      "en": "Volvo Penta VDS-3 15W-40, 5 L"
     },
     "description": {
-      "sv": "15W-40 till inombordare diesel. Vanlig serviceolja till Volvo Penta, Yanmar och liknande båtdieslar.",
-      "en": "15W-40 for inboard diesels. Common service oil for Volvo Penta, Yanmar and similar marine diesels."
+      "sv": "Original Volvo Penta VDS-3 15W-40 till inombordare diesel. Vanlig serviceolja till Volvo Penta och liknande båtdieslar.",
+      "en": "Genuine Volvo Penta VDS-3 15W-40 for inboard diesels. Common service oil for Volvo Penta and similar marine diesels."
     },
     "image": "/images/products/oil-diesel-15w40-5l.jpg",
     "price": 449,
@@ -621,17 +683,19 @@
   },
   {
     "id": "filter-outboard-4stroke",
+    "manufacturer": "Yamaha",
+    "articleNumber": "5GH-13440-90-00",
     "category": {
       "sv": "Oljefilter",
       "en": "Oil filters"
     },
     "name": {
-      "sv": "Oljefilter 4-takts utombordare",
-      "en": "Oil filter 4-stroke outboard"
+      "sv": "Yamaha oljefilter 4-takts utombordare",
+      "en": "Yamaha oil filter 4-stroke outboard"
     },
     "description": {
-      "sv": "Spin-on-filter till vanliga 4-takts utombordare, t.ex. Yamaha, Honda och Suzuki. Kontrollera passform mot motormodell.",
-      "en": "Spin-on filter for common 4-stroke outboards, e.g. Yamaha, Honda and Suzuki. Check fitment against engine model."
+      "sv": "Originalfilter 5GH-13440-90-00 till Yamaha 4-takts utombordare F15–F70. Ersätter tidigare 5GH-13440-60/80.",
+      "en": "Genuine filter 5GH-13440-90-00 for Yamaha 4-stroke outboards F15–F70. Supersedes earlier 5GH-13440-60/80."
     },
     "image": "/images/products/filter-outboard-4stroke.jpg",
     "price": 119,
@@ -641,17 +705,19 @@
   },
   {
     "id": "filter-inboard-diesel",
+    "manufacturer": "Volvo Penta",
+    "articleNumber": "22030848",
     "category": {
       "sv": "Oljefilter",
       "en": "Oil filters"
     },
     "name": {
-      "sv": "Oljefilter inombordare diesel",
-      "en": "Oil filter inboard diesel"
+      "sv": "Volvo Penta oljefilter D4/D6",
+      "en": "Volvo Penta oil filter D4/D6"
     },
     "description": {
-      "sv": "Oljefilter till vanliga inombordare diesel, t.ex. Volvo Penta. Byt vid varje oljeservice.",
-      "en": "Oil filter for common inboard diesels, e.g. Volvo Penta. Replace at every oil service."
+      "sv": "Original oljefilter 22030848 till Volvo Penta D4 och D6. Ersätter 3582732. Byt vid varje oljeservice.",
+      "en": "Genuine oil filter 22030848 for Volvo Penta D4 and D6. Replaces 3582732. Replace at every oil service."
     },
     "image": "/images/products/filter-inboard-diesel.jpg",
     "price": 189,
@@ -661,17 +727,19 @@
   },
   {
     "id": "filter-mercury-4stroke",
+    "manufacturer": "Mercury",
+    "articleNumber": "35-877761K01",
     "category": {
       "sv": "Oljefilter",
       "en": "Oil filters"
     },
     "name": {
-      "sv": "Oljefilter Mercury 4-takt",
-      "en": "Oil filter Mercury 4-stroke"
+      "sv": "Mercury oljefilter 4-takt 75–150 hk",
+      "en": "Mercury oil filter 4-stroke 75–150 hp"
     },
     "description": {
-      "sv": "Spin-on-filter till Mercury och Mercruiser 4-takt. Ett av de mest sålda filtren till utombordare.",
-      "en": "Spin-on filter for Mercury and Mercruiser 4-stroke. One of the best-selling outboard filters."
+      "sv": "Originalfilter 35-877761K01 till Mercury/Mariner 4-takt 75–115 hk och 150 hk EFI. Byt vid oljeservice.",
+      "en": "Genuine filter 35-877761K01 for Mercury/Mariner 4-stroke 75–115 hp and 150 hp EFI. Replace at oil service."
     },
     "image": "/images/products/filter-mercury-4stroke.jpg",
     "price": 149,

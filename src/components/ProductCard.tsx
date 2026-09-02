@@ -5,6 +5,7 @@ import { useState } from "react";
 
 type ProductCardProps = {
   name: string;
+  articleLabel: string;
   description: string;
   image: string;
   fallbackImage: string;
@@ -16,6 +17,7 @@ type ProductCardProps = {
 
 export default function ProductCard({
   name,
+  articleLabel,
   description,
   image,
   fallbackImage,
@@ -49,6 +51,7 @@ export default function ProductCard({
           <h3 className="text-base font-semibold leading-snug">{name}</h3>
           <p className="shrink-0 font-medium text-textColor">{priceLabel}</p>
         </div>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400">{articleLabel}</p>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
           {description}
         </p>

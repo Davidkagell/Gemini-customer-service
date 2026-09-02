@@ -31,6 +31,10 @@ export default function Products() {
                 >
                   <ProductCard
                     name={product.name[locale]}
+                    articleLabel={t("productsPage.articleNumber", {
+                      manufacturer: product.manufacturer,
+                      number: product.articleNumber,
+                    })}
                     description={product.description[locale]}
                     image={product.image}
                     fallbackImage={MISSING_IMAGE}

@@ -24,6 +24,7 @@
     "title": "Products",
     "inStock": "{count} in stock",
     "outOfStock": "Out of stock",
+    "articleNumber": "{manufacturer} part no. {number}",
     "backToProducts": "Back to products"
   },
   "aboutPage": {

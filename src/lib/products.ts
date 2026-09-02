@@ -19,6 +19,8 @@ function productSearchBlob(product: Product) {
   return normalizeSearchText(
     [
       product.id,
+      product.manufacturer,
+      product.articleNumber,
       product.name.sv,
       product.name.en,
       product.category.sv,
@@ -103,6 +105,8 @@ export function searchProducts(
   return ranked.map(({ product }) => ({
     id: product.id,
     name: product.name[locale],
+    manufacturer: product.manufacturer,
+    articleNumber: product.articleNumber,
     category: product.category[locale],
     price: product.price,
     currency: product.currency,

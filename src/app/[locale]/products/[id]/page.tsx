@@ -45,6 +45,10 @@ export default async function ProductDetailPage({
       </Link>
       <ProductCard
         name={product.name[locale]}
+        articleLabel={t("articleNumber", {
+          manufacturer: product.manufacturer,
+          number: product.articleNumber,
+        })}
         description={product.description[locale]}
         image={product.image}
         fallbackImage={MISSING_IMAGE}
