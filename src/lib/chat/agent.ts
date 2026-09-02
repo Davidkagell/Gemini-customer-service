@@ -28,6 +28,7 @@ export function createCustomerServiceAgent(locale: Locale) {
   return new ToolLoopAgent({
     model: geminiModel,
     temperature: 0.1,
+    maxRetries: 0,
     instructions: buildInstructions(locale),
     tools: {
       searchProducts: createSearchProductsTool(locale),
