@@ -11,6 +11,9 @@
     "closeChat": "Close chat",
     "maxLength": "Max {max} characters per message"
   },
+  "footer": {
+    "copyright": "© {year} {name}"
+  },
   "nav": {
     "start": "Start",
     "products": "Products",

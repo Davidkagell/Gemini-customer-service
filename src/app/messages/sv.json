@@ -11,6 +11,9 @@
     "closeChat": "Stäng chatten",
     "maxLength": "Max {max} tecken per meddelande"
   },
+  "footer": {
+    "copyright": "© {year} {name}"
+  },
   "nav": {
     "start": "Start",
     "products": "Produkter",
