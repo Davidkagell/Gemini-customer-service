@@ -1,7 +1,7 @@
 "use client";
 
 import { useChat } from "@ai-sdk/react";
-import { useTranslations } from "next-intl";
+import { hasLocale, useLocale, useTranslations } from "next-intl";
 import { DefaultChatTransport, isTextUIPart } from "ai";
 import {
   useEffect,
@@ -11,6 +11,8 @@ import {
   type FormEvent,
   type KeyboardEvent,
 } from "react";
+import { renderTextWithLinks } from "@/lib/chat/render-text-with-links";
+import { routing } from "@/i18n/routing";
 import { MAX_MESSAGE_LENGTH, type ChatUIMessage } from "@/types/chat";
 
 const INPUT_MAX_ROWS = 2;
@@ -70,13 +72,21 @@ type ChatProps = {
 
 export default function Chat({ isOpen, onClose }: ChatProps) {
   const t = useTranslations();
+  const requestedLocale = useLocale();
+  const locale = hasLocale(routing.locales, requestedLocale)
+    ? requestedLocale
+    : routing.defaultLocale;
   const [input, setInput] = useState("");
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const { scrollerRef, contentRef, onScroll, pinToBottom } = useStickToBottom();
 
   const transport = useMemo(
-    () => new DefaultChatTransport({ api: "/api/chat" }),
-    [],
+    () =>
+      new DefaultChatTransport({
+        api: "/api/chat",
+        body: { locale },
+      }),
+    [locale],
   );
 
   const { messages, sendMessage, status, error, clearError, stop } =
@@ -85,6 +95,10 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
     });
 
   const isBusy = status === "submitted" || status === "streaming";
+  const lastMessage = messages.at(-1);
+  const assistantHasStartedWriting =
+    lastMessage?.role === "assistant" && getMessageText(lastMessage).length > 0;
+  const showGenerating = isBusy && !assistantHasStartedWriting;
 
   useEffect(() => {
     if (!isOpen || isBusy) return;
@@ -170,6 +184,15 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
           {messages.map((message) => {
             const text = getMessageText(message);
             const isUser = message.role === "user";
+            const isPendingAssistant =
+              !isUser &&
+              !text &&
+              showGenerating &&
+              message.id === lastMessage?.id;
+
+            if (isPendingAssistant) {
+              return null;
+            }
 
             return (
               <div
@@ -188,11 +211,25 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
                       {t("common.assistantLabel")}
                     </p>
                   )}
-                  {text || <span className="text-textColor/40">...</span>}
+                  {text ? (
+                    <span>{renderTextWithLinks(text)}</span>
+                  ) : (
+                    <span className="text-textColor/40">...</span>
+                  )}
                 </div>
               </div>
             );
           })}
+
+          {showGenerating ? (
+            <div className="flex justify-start">
+              <div className="max-w-[85%] rounded-2xl border border-foreground/10 bg-foreground/3 px-4 py-3 text-sm leading-relaxed text-textColor">
+                <span className="text-textColor/40">
+                  {t("common.generating")}
+                </span>
+              </div>
+            </div>
+          ) : null}
 
           {error && (
             <div className="rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-700 dark:text-red-300">

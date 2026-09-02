@@ -23,7 +23,8 @@
   "productsPage": {
     "title": "Products",
     "inStock": "{count} in stock",
-    "outOfStock": "Out of stock"
+    "outOfStock": "Out of stock",
+    "backToProducts": "Back to products"
   },
   "aboutPage": {
     "title": "About us",

@@ -34,7 +34,7 @@ export default function ProductCard({
           src={imageSrc}
           alt=""
           fill
-          loading= "eager"
+          loading="eager"
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           onError={() => {
             if (imageSrc !== fallbackImage) {

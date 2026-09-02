@@ -1,5 +1,6 @@
 import { hasLocale, useLocale, useTranslations } from "next-intl";
 import ProductCard from "@/components/ProductCard";
+import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { formatProductPrice, groupProductsByCategory } from "@/lib/products";
 
@@ -24,22 +25,27 @@ export default function Products() {
           <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {group.products.map((product) => (
               <li key={product.id}>
-                <ProductCard
-                  name={product.name[locale]}
-                  description={product.description[locale]}
-                  image={product.image}
-                  fallbackImage={MISSING_IMAGE}
-                  priceLabel={formatProductPrice(
-                    locale,
-                    product.price,
-                    product.currency,
-                  )}
-                  quantity={product.quantity}
-                  inStockLabel={t("productsPage.inStock", {
-                    count: product.quantity,
-                  })}
-                  outOfStockLabel={t("productsPage.outOfStock")}
-                />
+                <Link
+                  href={`/products/${product.id}`}
+                  className="block h-full transition hover:opacity-90"
+                >
+                  <ProductCard
+                    name={product.name[locale]}
+                    description={product.description[locale]}
+                    image={product.image}
+                    fallbackImage={MISSING_IMAGE}
+                    priceLabel={formatProductPrice(
+                      locale,
+                      product.price,
+                      product.currency,
+                    )}
+                    quantity={product.quantity}
+                    inStockLabel={t("productsPage.inStock", {
+                      count: product.quantity,
+                    })}
+                    outOfStockLabel={t("productsPage.outOfStock")}
+                  />
+                </Link>
               </li>
             ))}
           </ul>

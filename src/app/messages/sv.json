@@ -23,7 +23,8 @@
   "productsPage": {
     "title": "Produkter",
     "inStock": "{count} st i lager",
-    "outOfStock": "Slut i lager"
+    "outOfStock": "Slut i lager",
+    "backToProducts": "Tillbaka till produkter"
   },
   "aboutPage": {
     "title": "Om oss",

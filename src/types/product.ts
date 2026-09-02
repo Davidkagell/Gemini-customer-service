@@ -14,3 +14,14 @@ export type Product = {
   quantity: number;
   inStock: boolean;
 };
+
+export type ProductSearchResult = {
+  id: string;
+  name: string;
+  category: string;
+  price: number;
+  currency: string;
+  inStock: boolean;
+  quantity: number;
+  url: string;
+};
