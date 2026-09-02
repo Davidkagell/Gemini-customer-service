@@ -1,6 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
 import { org } from "@/config/org";
-import { Link } from "@/i18n/navigation";
 
 export default function Footer() {
   const t = useTranslations();
@@ -16,20 +15,6 @@ export default function Footer() {
           <p className="font-semibold">{name}</p>
           <p className="text-sm text-foreground/70">{description}</p>
         </div>
-        <ul className="flex flex-row flex-wrap gap-5">
-          <li>
-            <Link href="/">{t("nav.start")}</Link>
-          </li>
-          <li>
-            <Link href="/products">{t("nav.products")}</Link>
-          </li>
-          <li>
-            <Link href="/about">{t("nav.about")}</Link>
-          </li>
-          <li>
-            <Link href="/contact">{t("nav.contact")}</Link>
-          </li>
-        </ul>
       </div>
       <p className="mt-6 text-xs text-foreground/50">
         {t("footer.copyright", { year, name })}
