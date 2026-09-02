@@ -9,7 +9,7 @@ type ProductCardProps = {
   image: string;
   fallbackImage: string;
   priceLabel: string;
-  inStock: boolean;
+  quantity: number;
   inStockLabel: string;
   outOfStockLabel: string;
 };
@@ -20,7 +20,7 @@ export default function ProductCard({
   image,
   fallbackImage,
   priceLabel,
-  inStock,
+  quantity,
   inStockLabel,
   outOfStockLabel,
 }: ProductCardProps) {
@@ -34,13 +34,14 @@ export default function ProductCard({
           src={imageSrc}
           alt=""
           fill
+          loading= "eager"
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           onError={() => {
             if (imageSrc !== fallbackImage) {
               setImageFailed(true);
             }
           }}
-          className={inStock ? "object-cover" : "object-cover opacity-50"}
+          className={quantity > 0 ? "object-cover" : "object-cover opacity-50"}
         />
       </div>
       <div className="flex flex-1 flex-col gap-2 p-4">
@@ -52,9 +53,9 @@ export default function ProductCard({
           {description}
         </p>
         <p
-          className={`mt-auto pt-2 text-sm ${inStock ? "text-textColor" : "text-zinc-500"}`}
+          className={`mt-auto pt-2 text-sm ${quantity > 0 ? "text-textColor" : "text-zinc-500"}`}
         >
-          {inStock ? inStockLabel : outOfStockLabel}
+          {quantity > 0 ? inStockLabel : outOfStockLabel}
         </p>
       </div>
     </article>

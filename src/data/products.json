@@ -16,6 +16,7 @@
     "image": "/images/products/anchor-plough-5kg.jpg",
     "price": 899,
     "currency": "SEK",
+    "quantity": 12,
     "inStock": true
   },
   {
@@ -35,6 +36,7 @@
     "image": "/images/products/anchor-plough-10kg.jpg",
     "price": 1490,
     "currency": "SEK",
+    "quantity": 6,
     "inStock": true
   },
   {
@@ -54,6 +56,7 @@
     "image": "/images/products/anchor-bruce-7-5kg.jpg",
     "price": 1195,
     "currency": "SEK",
+    "quantity": 0,
     "inStock": false
   },
   {
@@ -73,6 +76,7 @@
     "image": "/images/products/anchor-chain-8mm-20m.jpg",
     "price": 1290,
     "currency": "SEK",
+    "quantity": 9,
     "inStock": true
   },
   {
@@ -92,6 +96,7 @@
     "image": "/images/products/prop-aluminium-13x19.jpg",
     "price": 2190,
     "currency": "SEK",
+    "quantity": 4,
     "inStock": true
   },
   {
@@ -111,6 +116,7 @@
     "image": "/images/products/prop-aluminium-14x21.jpg",
     "price": 2490,
     "currency": "SEK",
+    "quantity": 3,
     "inStock": true
   },
   {
@@ -130,6 +136,7 @@
     "image": "/images/products/prop-stainless-13x19.jpg",
     "price": 4890,
     "currency": "SEK",
+    "quantity": 8,
     "inStock": true
   },
   {
@@ -149,6 +156,7 @@
     "image": "/images/products/prop-hub-kit.jpg",
     "price": 349,
     "currency": "SEK",
+    "quantity": 22,
     "inStock": true
   },
   {
@@ -168,6 +176,7 @@
     "image": "/images/products/rope-polyester-12mm-50m.jpg",
     "price": 790,
     "currency": "SEK",
+    "quantity": 15,
     "inStock": true
   },
   {
@@ -187,6 +196,7 @@
     "image": "/images/products/rope-polyester-14mm-50m.jpg",
     "price": 990,
     "currency": "SEK",
+    "quantity": 7,
     "inStock": true
   },
   {
@@ -206,6 +216,7 @@
     "image": "/images/products/rope-anchor-16mm-30m.jpg",
     "price": 645,
     "currency": "SEK",
+    "quantity": 18,
     "inStock": true
   },
   {
@@ -225,6 +236,7 @@
     "image": "/images/products/fender-line-8mm-2m.jpg",
     "price": 129,
     "currency": "SEK",
+    "quantity": 11,
     "inStock": true
   },
   {
@@ -244,6 +256,7 @@
     "image": "/images/products/light-nav-led-tricolour.jpg",
     "price": 1590,
     "currency": "SEK",
+    "quantity": 5,
     "inStock": true
   },
   {
@@ -263,6 +276,7 @@
     "image": "/images/products/light-nav-port-starboard.jpg",
     "price": 890,
     "currency": "SEK",
+    "quantity": 14,
     "inStock": true
   },
   {
@@ -282,6 +296,7 @@
     "image": "/images/products/light-stern-led.jpg",
     "price": 495,
     "currency": "SEK",
+    "quantity": 0,
     "inStock": false
   },
   {
@@ -301,6 +316,7 @@
     "image": "/images/products/light-anchor-led.jpg",
     "price": 420,
     "currency": "SEK",
+    "quantity": 10,
     "inStock": true
   },
   {
@@ -320,6 +336,7 @@
     "image": "/images/products/pump-bilge-12v-47l.jpg",
     "price": 695,
     "currency": "SEK",
+    "quantity": 16,
     "inStock": true
   },
   {
@@ -339,6 +356,7 @@
     "image": "/images/products/pump-bilge-12v-76l.jpg",
     "price": 990,
     "currency": "SEK",
+    "quantity": 20,
     "inStock": true
   },
   {
@@ -358,6 +376,7 @@
     "image": "/images/products/pump-manual-diaphragm.jpg",
     "price": 1250,
     "currency": "SEK",
+    "quantity": 8,
     "inStock": true
   },
   {
@@ -377,6 +396,7 @@
     "image": "/images/products/pump-freshwater-12v.jpg",
     "price": 1140,
     "currency": "SEK",
+    "quantity": 13,
     "inStock": true
   },
   {
@@ -396,6 +416,7 @@
     "image": "/images/products/elec-battery-switch.jpg",
     "price": 389,
     "currency": "SEK",
+    "quantity": 24,
     "inStock": true
   },
   {
@@ -415,6 +436,7 @@
     "image": "/images/products/elec-fuse-panel-6.jpg",
     "price": 560,
     "currency": "SEK",
+    "quantity": 9,
     "inStock": true
   },
   {
@@ -434,6 +456,7 @@
     "image": "/images/products/elec-usb-charger.jpg",
     "price": 249,
     "currency": "SEK",
+    "quantity": 7,
     "inStock": true
   },
   {
@@ -453,6 +476,7 @@
     "image": "/images/products/elec-nav-display-7.jpg",
     "price": 6990,
     "currency": "SEK",
+    "quantity": 0,
     "inStock": false
   },
   {
@@ -472,6 +496,7 @@
     "image": "/images/products/safety-fender-20x60.jpg",
     "price": 279,
     "currency": "SEK",
+    "quantity": 5,
     "inStock": true
   },
   {
@@ -491,6 +516,7 @@
     "image": "/images/products/safety-lifejacket-150n.jpg",
     "price": 1290,
     "currency": "SEK",
+    "quantity": 19,
     "inStock": true
   },
   {
@@ -510,6 +536,7 @@
     "image": "/images/products/safety-throwline-20m.jpg",
     "price": 395,
     "currency": "SEK",
+    "quantity": 11,
     "inStock": true
   }
 ]

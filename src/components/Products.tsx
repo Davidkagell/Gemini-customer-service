@@ -1,22 +1,21 @@
-import { hasLocale } from "next-intl";
-import { getLocale, getTranslations } from "next-intl/server";
+import { hasLocale, useLocale, useTranslations } from "next-intl";
 import ProductCard from "@/components/ProductCard";
 import { routing } from "@/i18n/routing";
 import { formatProductPrice, groupProductsByCategory } from "@/lib/products";
 
 const MISSING_IMAGE = "/image-missing.jpg";
 
-export default async function Products() {
-  const requestedLocale = await getLocale();
+export default function Products() {
+  const t = useTranslations();
+  const requestedLocale = useLocale();
   const locale = hasLocale(routing.locales, requestedLocale)
     ? requestedLocale
     : routing.defaultLocale;
-  const t = await getTranslations("productsPage");
   const groups = groupProductsByCategory(locale);
 
   return (
     <main className="mx-auto w-full max-w-6xl px-10 py-6 pb-24">
-      <h1 className="text-2xl font-semibold">{t("title")}</h1>
+      <h1 className="text-2xl font-semibold">{t("productsPage.title")}</h1>
       {groups.map((group) => (
         <section key={group.category} className="mt-10">
           <h2 className="mb-4 text-lg font-semibold text-textColor">
@@ -35,9 +34,11 @@ export default async function Products() {
                     product.price,
                     product.currency,
                   )}
-                  inStock={product.inStock}
-                  inStockLabel={t("inStock")}
-                  outOfStockLabel={t("outOfStock")}
+                  quantity={product.quantity}
+                  inStockLabel={t("productsPage.inStock", {
+                    count: product.quantity,
+                  })}
+                  outOfStockLabel={t("productsPage.outOfStock")}
                 />
               </li>
             ))}

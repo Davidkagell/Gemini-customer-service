@@ -19,13 +19,13 @@
   },
   "productsPage": {
     "title": "Products",
-    "inStock": "In stock",
+    "inStock": "{count} in stock",
     "outOfStock": "Out of stock"
   },
   "aboutPage": {
     "title": "About us",
-    "lead": "We sell boat parts that are meant to fit, seal and last – and we help you choose the right one.",
+    "lead": "We sell high-quality boat parts built to last and made for the marine environment – and we are here when you need help choosing the right one.",
     "story": "Davids boat parts is a small shop for people who actually go out on the water. The range is deliberately tight: anchors, propellers, ropes, navigation lights, pumps and a bit of electronics. Better to have the right part in stock than shelves of things nobody asks for.",
-    "help": "Unsure about size, pitch or what fits your boat? Ask the chat in the bottom right. It knows our catalogue and does not guess."
+    "help": "Unsure what fits your boat? Ask the chat in the bottom right. It knows our range and does not guess."
   }
 }

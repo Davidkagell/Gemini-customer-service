@@ -19,7 +19,7 @@
   },
   "productsPage": {
     "title": "Produkter",
-    "inStock": "I lager",
+    "inStock": "{count} st i lager",
     "outOfStock": "Slut i lager"
   },
   "aboutPage": {
