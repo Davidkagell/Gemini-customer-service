@@ -15,7 +15,9 @@
       "sv": "Galvaniserat plogankare Delta för båtar upp till ca 25 fot. Bra fäste i lera och sand.",
       "en": "Galvanized Delta plough anchor for boats up to about 25 ft. Holds well in mud and sand."
     },
-    "image": "/images/products/anchor-plough-5kg.jpg",
+    "images": [
+      "/images/products/anchor-plough-5kg.jpg"
+    ],
     "price": 899,
     "currency": "SEK",
     "quantity": 12,
@@ -37,11 +39,13 @@
       "sv": "Tyngre Delta-plogankare för båtar runt 28–35 fot. Extra hållkraft i blåst.",
       "en": "Heavier Delta plough anchor for boats around 28–35 ft. Extra holding power in wind."
     },
-    "image": "/images/products/anchor-plough-10kg.jpg",
     "price": 1490,
     "currency": "SEK",
     "quantity": 6,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/anchor-plough-10kg.jpg"
+    ]
   },
   {
     "id": "anchor-bruce-7-5kg",
@@ -59,11 +63,13 @@
       "sv": "Klöverkloankare som sätter sig snabbt. Lämpligt för blandad botten.",
       "en": "Claw anchor that sets quickly. Suitable for mixed seabeds."
     },
-    "image": "/images/products/anchor-bruce-7-5kg.jpg",
     "price": 1195,
     "currency": "SEK",
     "quantity": 0,
-    "inStock": false
+    "inStock": false,
+    "images": [
+      "/images/products/anchor-bruce-7-5kg.jpg"
+    ]
   },
   {
     "id": "anchor-chain-8mm-20m",
@@ -81,11 +87,13 @@
       "sv": "Galvaniserad kalibrerad kätting 8 mm DIN 766, 20 m. Använd som första del av ankarlinan för bättre fäste.",
       "en": "Galvanized calibrated 8 mm DIN 766 chain, 20 m. Use as the first section of the rode for better holding."
     },
-    "image": "/images/products/anchor-chain-8mm-20m.jpg",
     "price": 1290,
     "currency": "SEK",
     "quantity": 9,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/anchor-chain-8mm-20m.jpg"
+    ]
   },
   {
     "id": "prop-aluminium-13x19",
@@ -103,11 +111,13 @@
       "sv": "3-bladig aluminiumpropeller, diameter 13 tum, stigning 19. Högergående.",
       "en": "3-blade aluminium propeller, 13 inch diameter, 19 pitch. Right-hand rotation."
     },
-    "image": "/images/products/prop-aluminium-13x19.jpg",
     "price": 2190,
     "currency": "SEK",
     "quantity": 4,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/prop-aluminium-13x19.jpg"
+    ]
   },
   {
     "id": "prop-aluminium-14x21",
@@ -125,11 +135,13 @@
       "sv": "3-bladig aluminiumpropeller 14x21 för Mercury/Mercruiser. Högergående.",
       "en": "3-blade aluminium propeller 14x21 for Mercury/Mercruiser. Right-hand rotation."
     },
-    "image": "/images/products/prop-aluminium-14x21.jpg",
     "price": 2490,
     "currency": "SEK",
     "quantity": 3,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/prop-aluminium-14x21.jpg"
+    ]
   },
   {
     "id": "prop-stainless-13x19",
@@ -147,11 +159,13 @@
       "sv": "Rostfri 3-bladig propeller. Tåligare mot slag och ger ofta lite bättre toppfart.",
       "en": "Stainless 3-blade propeller. More impact-resistant and often a bit more top speed."
     },
-    "image": "/images/products/prop-stainless-13x19.jpg",
     "price": 4890,
     "currency": "SEK",
     "quantity": 8,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/prop-stainless-13x19.jpg"
+    ]
   },
   {
     "id": "prop-hub-kit",
@@ -169,11 +183,13 @@
       "sv": "Reservnav i gummi till aluminiumpropeller. Byt vid slirning istället för hela propellern.",
       "en": "Spare rubber hub for aluminium propellers. Replace when slipping instead of the whole propeller."
     },
-    "image": "/images/products/prop-hub-kit.jpg",
     "price": 349,
     "currency": "SEK",
     "quantity": 22,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/prop-hub-kit.jpg"
+    ]
   },
   {
     "id": "rope-polyester-12mm-50m",
@@ -191,11 +207,13 @@
       "sv": "Flätad polyestertamp för förtöjning. Låg töjning och bra UV-tålighet. Blå/vit.",
       "en": "Braided polyester rope for mooring. Low stretch and good UV resistance. Blue/white."
     },
-    "image": "/images/products/rope-polyester-12mm-50m.jpg",
     "price": 790,
     "currency": "SEK",
     "quantity": 15,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/rope-polyester-12mm-50m.jpg"
+    ]
   },
   {
     "id": "rope-polyester-14mm-50m",
@@ -213,11 +231,13 @@
       "sv": "Grov förtöjningstamp för större båtar. 14 mm, 50 meter.",
       "en": "Heavy mooring rope for larger boats. 14 mm, 50 metres."
     },
-    "image": "/images/products/rope-polyester-14mm-50m.jpg",
     "price": 990,
     "currency": "SEK",
     "quantity": 7,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/rope-polyester-14mm-50m.jpg"
+    ]
   },
   {
     "id": "rope-anchor-16mm-30m",
@@ -235,11 +255,13 @@
       "sv": "Treslagen ankarlina i polyamid. Mjuk och stark, lämplig efter kätting.",
       "en": "Three-strand nylon anchor line. Soft and strong, suitable after chain."
     },
-    "image": "/images/products/rope-anchor-16mm-30m.jpg",
     "price": 645,
     "currency": "SEK",
     "quantity": 18,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/rope-anchor-16mm-30m.jpg"
+    ]
   },
   {
     "id": "fender-line-8mm-2m",
@@ -257,11 +279,13 @@
       "sv": "Färdiga fendertampar med splits. Passar de flesta fendrar.",
       "en": "Ready-made fender lines with splices. Fits most fenders."
     },
-    "image": "/images/products/fender-line-8mm-2m.jpg",
     "price": 129,
     "currency": "SEK",
     "quantity": 11,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/fender-line-8mm-2m.jpg"
+    ]
   },
   {
     "id": "light-nav-led-tricolour",
@@ -279,11 +303,13 @@
       "sv": "LED-lanterna med rött, grönt och vitt i ett hus. 12 V, låg strömförbrukning.",
       "en": "LED light with red, green and white in one housing. 12 V, low power draw."
     },
-    "image": "/images/products/light-nav-led-tricolour.jpg",
     "price": 1590,
     "currency": "SEK",
     "quantity": 5,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/light-nav-led-tricolour.jpg"
+    ]
   },
   {
     "id": "light-nav-port-starboard",
@@ -301,11 +327,13 @@
       "sv": "Par lanternor Series 34 för reling: babord 3853001000 och styrbord 3852001000. 12/24 V LED.",
       "en": "Series 34 rail pair: port 3853001000 and starboard 3852001000. 12/24 V LED."
     },
-    "image": "/images/products/light-nav-port-starboard.jpg",
     "price": 890,
     "currency": "SEK",
     "quantity": 14,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/light-nav-port-starboard.jpg"
+    ]
   },
   {
     "id": "light-stern-led",
@@ -323,11 +351,13 @@
       "sv": "Vit akterlanterna LED, 135 graders sektor. För 12 V-system.",
       "en": "White LED stern light, 135 degree sector. For 12 V systems."
     },
-    "image": "/images/products/light-stern-led.jpg",
     "price": 495,
     "currency": "SEK",
     "quantity": 0,
-    "inStock": false
+    "inStock": false,
+    "images": [
+      "/images/products/light-stern-led.jpg"
+    ]
   },
   {
     "id": "light-anchor-led",
@@ -345,11 +375,13 @@
       "sv": "Runtlysande vit ankarlanterna. Kan sitta i masttopp eller hissas i förstag.",
       "en": "All-round white anchor light. Mount at masthead or hoist on the forestay."
     },
-    "image": "/images/products/light-anchor-led.jpg",
     "price": 420,
     "currency": "SEK",
     "quantity": 10,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/light-anchor-led.jpg"
+    ]
   },
   {
     "id": "pump-bilge-12v-47l",
@@ -367,11 +399,13 @@
       "sv": "Automatisk länspump med inbyggd flottör. Ca 50 liter per minut (800 GPH).",
       "en": "Automatic bilge pump with built-in float switch. About 50 litres per minute (800 GPH)."
     },
-    "image": "/images/products/pump-bilge-12v-47l.jpg",
     "price": 695,
     "currency": "SEK",
     "quantity": 16,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/pump-bilge-12v-47l.jpg"
+    ]
   },
   {
     "id": "pump-bilge-12v-76l",
@@ -389,11 +423,13 @@
       "sv": "Kraftigare automatisk länspump för större båtar. Ca 69 liter per minut (1100 GPH), 12 V.",
       "en": "Heavier automatic bilge pump for larger boats. About 69 litres per minute (1100 GPH), 12 V."
     },
-    "image": "/images/products/pump-bilge-12v-76l.jpg",
     "price": 990,
     "currency": "SEK",
     "quantity": 20,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/pump-bilge-12v-76l.jpg"
+    ]
   },
   {
     "id": "pump-manual-diaphragm",
@@ -411,11 +447,13 @@
       "sv": "Handdriven länspump som backup om elen går. Monteringsbar i sittbrunn.",
       "en": "Hand-operated bilge pump as backup if power fails. Can be mounted in the cockpit."
     },
-    "image": "/images/products/pump-manual-diaphragm.jpg",
     "price": 1250,
     "currency": "SEK",
     "quantity": 8,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/pump-manual-diaphragm.jpg"
+    ]
   },
   {
     "id": "pump-freshwater-12v",
@@ -433,11 +471,13 @@
       "sv": "Tryckvattenpump till disk och dusch ombord. Självsugande, 12 V.",
       "en": "Pressure water pump for sink and shower onboard. Self-priming, 12 V."
     },
-    "image": "/images/products/pump-freshwater-12v.jpg",
     "price": 1140,
     "currency": "SEK",
     "quantity": 13,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/pump-freshwater-12v.jpg"
+    ]
   },
   {
     "id": "elec-battery-switch",
@@ -455,11 +495,13 @@
       "sv": "Huvudbrytare för 12 V-system, 300 A kontinuerligt. Med frånskiljarläge.",
       "en": "Main switch for 12 V systems, 300 A continuous. Includes off position."
     },
-    "image": "/images/products/elec-battery-switch.jpg",
     "price": 389,
     "currency": "SEK",
     "quantity": 24,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/elec-battery-switch.jpg"
+    ]
   },
   {
     "id": "elec-fuse-panel-6",
@@ -477,11 +519,13 @@
       "sv": "Vattentät säkringspanel med LED-indikering. 6 kretsar, 12 V.",
       "en": "Waterproof fuse panel with LED indication. 6 circuits, 12 V."
     },
-    "image": "/images/products/elec-fuse-panel-6.jpg",
     "price": 560,
     "currency": "SEK",
     "quantity": 9,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/elec-fuse-panel-6.jpg"
+    ]
   },
   {
     "id": "elec-usb-charger",
@@ -499,11 +543,13 @@
       "sv": "Infälld dubbel USB-A/USB-C för 12 V. För telefon och surfplatta ombord.",
       "en": "Flush-mount dual USB-A/USB-C for 12 V. For phone and tablet onboard."
     },
-    "image": "/images/products/elec-usb-charger.jpg",
     "price": 249,
     "currency": "SEK",
     "quantity": 7,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/elec-usb-charger.jpg"
+    ]
   },
   {
     "id": "elec-nav-display-7",
@@ -521,11 +567,13 @@
       "sv": "Kartplotter 7 tum med GPS. Underlagskarta ingår, sjökort köps separat.",
       "en": "7 inch chartplotter with GPS. Basemap included, charts sold separately."
     },
-    "image": "/images/products/elec-nav-display-7.jpg",
     "price": 6990,
     "currency": "SEK",
     "quantity": 0,
-    "inStock": false
+    "inStock": false,
+    "images": [
+      "/images/products/elec-nav-display-7.jpg"
+    ]
   },
   {
     "id": "safety-fender-20x60",
@@ -543,11 +591,13 @@
       "sv": "Cylindrisk fender F-2, 22 x 61 cm. Vit. Passar båtar runt 25–32 fot.",
       "en": "Cylindrical F-2 fender, 22 x 61 cm. White. Fits boats around 25–32 ft."
     },
-    "image": "/images/products/safety-fender-20x60.jpg",
     "price": 279,
     "currency": "SEK",
     "quantity": 5,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/safety-fender-20x60.jpg"
+    ]
   },
   {
     "id": "safety-lifejacket-150n",
@@ -565,11 +615,13 @@
       "sv": "Automatisk flytväst 150 N, one size vuxen. Med grenband och reflex.",
       "en": "Automatic lifejacket 150 N, adult one size. With crotch strap and reflective tape."
     },
-    "image": "/images/products/safety-lifejacket-150n.jpg",
     "price": 1290,
     "currency": "SEK",
     "quantity": 19,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/safety-lifejacket-150n.jpg"
+    ]
   },
   {
     "id": "safety-throwline-20m",
@@ -587,11 +639,13 @@
       "sv": "Flytande räddningslina 20 m i påse. Ska sitta lättillgänglig i sittbrunnen.",
       "en": "Floating throw line 20 m in a bag. Keep within easy reach in the cockpit."
     },
-    "image": "/images/products/safety-throwline-20m.jpg",
     "price": 395,
     "currency": "SEK",
     "quantity": 11,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/safety-throwline-20m.jpg"
+    ]
   },
   {
     "id": "glycol-propylene-4l",
@@ -609,11 +663,13 @@
       "sv": "Propylenglykol, färdigblandad (1 US gallon). Biologiskt nedbrytbar och mindre giftig än etylenglykol. För frostskydd av kylsystem och vattensystem ombord.",
       "en": "Propylene glycol, ready mixed (1 US gallon). Biodegradable and less toxic than ethylene glycol. For freeze protection of cooling and water systems onboard."
     },
-    "image": "/images/products/glycol-propylene-4l.jpg",
     "price": 329,
     "currency": "SEK",
     "quantity": 14,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/glycol-propylene-4l.jpg"
+    ]
   },
   {
     "id": "oil-4stroke-10w30-4l",
@@ -631,11 +687,13 @@
       "sv": "Yamaha Yamalube syntetisk 10W-30 för 4-takts utombordare. Passar Yamaha och andra 4-takts utombordare enligt motorns specifikation.",
       "en": "Yamaha Yamalube synthetic 10W-30 for 4-stroke outboards. Fits Yamaha and other 4-stroke outboards per the engine specification."
     },
-    "image": "/images/products/oil-4stroke-10w30-4l.jpg",
     "price": 579,
     "currency": "SEK",
     "quantity": 18,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/oil-4stroke-10w30-4l.jpg"
+    ]
   },
   {
     "id": "oil-2stroke-tcw3-1l",
@@ -653,11 +711,13 @@
       "sv": "Askfri TC-W3 blandolja till 2-takts utombordare. Blandas i bensinen enligt motorns rekommendation, ofta 50:1.",
       "en": "Ashless TC-W3 mix oil for 2-stroke outboards. Mix with petrol per the engine recommendation, often 50:1."
     },
-    "image": "/images/products/oil-2stroke-tcw3-1l.jpg",
     "price": 179,
     "currency": "SEK",
     "quantity": 26,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/oil-2stroke-tcw3-1l.jpg"
+    ]
   },
   {
     "id": "oil-diesel-15w40-5l",
@@ -675,11 +735,13 @@
       "sv": "Original Volvo Penta VDS-3 15W-40 till inombordare diesel. Vanlig serviceolja till Volvo Penta och liknande båtdieslar.",
       "en": "Genuine Volvo Penta VDS-3 15W-40 for inboard diesels. Common service oil for Volvo Penta and similar marine diesels."
     },
-    "image": "/images/products/oil-diesel-15w40-5l.jpg",
     "price": 449,
     "currency": "SEK",
     "quantity": 12,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/oil-diesel-15w40-5l.jpg"
+    ]
   },
   {
     "id": "filter-outboard-4stroke",
@@ -697,11 +759,13 @@
       "sv": "Originalfilter 5GH-13440-90-00 till Yamaha 4-takts utombordare F15–F70. Ersätter tidigare 5GH-13440-60/80.",
       "en": "Genuine filter 5GH-13440-90-00 for Yamaha 4-stroke outboards F15–F70. Supersedes earlier 5GH-13440-60/80."
     },
-    "image": "/images/products/filter-outboard-4stroke.jpg",
     "price": 119,
     "currency": "SEK",
     "quantity": 31,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/filter-outboard-4stroke.jpg"
+    ]
   },
   {
     "id": "filter-inboard-diesel",
@@ -719,11 +783,13 @@
       "sv": "Original oljefilter 22030848 till Volvo Penta D4 och D6. Ersätter 3582732. Byt vid varje oljeservice.",
       "en": "Genuine oil filter 22030848 for Volvo Penta D4 and D6. Replaces 3582732. Replace at every oil service."
     },
-    "image": "/images/products/filter-inboard-diesel.jpg",
     "price": 189,
     "currency": "SEK",
     "quantity": 17,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/filter-inboard-diesel.jpg"
+    ]
   },
   {
     "id": "filter-mercury-4stroke",
@@ -741,10 +807,12 @@
       "sv": "Originalfilter 35-877761K01 till Mercury/Mariner 4-takt 75–115 hk och 150 hk EFI. Byt vid oljeservice.",
       "en": "Genuine filter 35-877761K01 for Mercury/Mariner 4-stroke 75–115 hp and 150 hp EFI. Replace at oil service."
     },
-    "image": "/images/products/filter-mercury-4stroke.jpg",
     "price": 149,
     "currency": "SEK",
     "quantity": 22,
-    "inStock": true
+    "inStock": true,
+    "images": [
+      "/images/products/filter-mercury-4stroke.jpg"
+    ]
   }
 ]
