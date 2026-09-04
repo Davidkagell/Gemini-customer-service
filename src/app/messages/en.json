@@ -18,7 +18,11 @@
     "start": "Start",
     "products": "Products",
     "about": "About us",
-    "contact": "Contact us"
+    "contact": "Contact us",
+    "searchLabel": "Search products",
+    "searchPlaceholder": "Search products…",
+    "searchLoading": "Searching…",
+    "searchEmpty": "No products found"
   },
   "productsPage": {
     "title": "Products",

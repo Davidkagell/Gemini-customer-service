@@ -98,6 +98,7 @@ export function ProductCardItem({
                     src={src}
                     alt=""
                     fill
+                    loading = "eager"
                     sizes="88px"
                     className={imageClassName}
                   />
