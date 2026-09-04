@@ -16,7 +16,7 @@ export function createSearchProductsTool(locale: Locale) {
         ),
     }),
     execute: async ({ query }) => {
-      const results = searchProducts(query, locale);
+      const results = await searchProducts(query, locale);
       return {
         query,
         count: results.length,
