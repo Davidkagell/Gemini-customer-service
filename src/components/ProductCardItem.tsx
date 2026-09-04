@@ -44,7 +44,7 @@ export function ProductCardItem({
   return (
     <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:gap-10">
       <div className="shrink-0">
-        <div className="h-[250px] w-fit max-w-full overflow-hidden">
+        <div className="h-64 w-fit max-w-full overflow-hidden  rounded-2xl  ">
           <Image
             src={selectedSrc}
             alt={name}
@@ -88,9 +88,9 @@ export function ProductCardItem({
                     setSelectedIndex(index);
                     setImageFailed(false);
                   }}
-                  className={`relative aspect-square w-full overflow-hidden rounded-xl bg-zinc-200 dark:bg-zinc-800 ${
+                  className={`relative aspect-square w-full overflow-hidden rounded-xl ${
                     isSelected
-                      ? "ring-2 ring-textColor ring-offset-2 ring-offset-zinc-100 dark:ring-offset-zinc-900"
+                      ? " border-2 "
                       : ""
                   }`}
                 >

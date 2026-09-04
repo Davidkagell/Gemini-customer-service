@@ -36,7 +36,7 @@ export default async function ProductDetailPage({
   const t = await getTranslations({ locale, namespace: "productsPage" });
 
   return (
-    <main className="mx-auto w-full max-w-3xl px-10 py-6 pb-24">
+    <main className="mx-auto w-full max-w-6xl px-10 py-6 pb-24">
       <Link
         href="/products"
         className="mb-6 inline-block text-sm text-textColor/70 underline-offset-4 hover:underline"
