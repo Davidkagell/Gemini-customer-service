@@ -18,7 +18,11 @@
     "start": "Start",
     "products": "Produkter",
     "about": "Om oss",
-    "contact": "Kontakta oss"
+    "contact": "Kontakta oss",
+    "searchLabel": "Sök produkter",
+    "searchPlaceholder": "Sök produkter…",
+    "searchLoading": "Söker…",
+    "searchEmpty": "Inga produkter hittades"
   },
   "productsPage": {
     "title": "Produkter",

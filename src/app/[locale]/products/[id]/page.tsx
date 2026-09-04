@@ -1,7 +1,7 @@
 import { hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import ProductCard from "@/components/ProductCard";
+import { ProductCardItem } from "@/components/ProductCardItem";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import {
@@ -36,21 +36,21 @@ export default async function ProductDetailPage({
   const t = await getTranslations({ locale, namespace: "productsPage" });
 
   return (
-    <main className="mx-auto w-full max-w-3xl px-10 py-6 pb-24">
+    <main className="mx-auto w-full max-w-6xl px-10 py-6 pb-24">
       <Link
         href="/products"
         className="mb-6 inline-block text-sm text-textColor/70 underline-offset-4 hover:underline"
       >
         {t("backToProducts")}
       </Link>
-      <ProductCard
+      <ProductCardItem
         name={product.name[locale]}
         articleLabel={t("articleNumber", {
           manufacturer: product.manufacturer,
           number: product.articleNumber,
         })}
         description={product.description[locale]}
-        image={product.image}
+        images={product.images}
         fallbackImage={MISSING_IMAGE}
         priceLabel={formatProductPrice(locale, product.price, product.currency)}
         quantity={product.quantity}

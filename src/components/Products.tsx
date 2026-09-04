@@ -36,7 +36,7 @@ export default function Products() {
                       number: product.articleNumber,
                     })}
                     description={product.description[locale]}
-                    image={product.image}
+                    image={product.images[0] || ""}
                     fallbackImage={MISSING_IMAGE}
                     priceLabel={formatProductPrice(
                       locale,

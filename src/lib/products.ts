@@ -2,10 +2,26 @@ import catalog from "@/data/products.json";
 import type { Locale } from "@/app/messages";
 import { routing } from "@/i18n/routing";
 import type { Product, ProductSearchResult } from "@/types/product";
+import {
+  PRODUCTS_COLLECTION,
+  type TypesenseProductDocument,
+  typesense,
+} from "@/lib/typesense";
 
 export const products = catalog as Product[];
 
 const MAX_SEARCH_RESULTS = 8;
+
+const TYPESENSE_QUERY_BY = [
+  "name_sv",
+  "name_en",
+  "description_sv",
+  "description_en",
+  "manufacturer",
+  "articleNumber",
+  "category_sv",
+  "category_en",
+].join(",");
 
 function normalizeSearchText(value: string) {
   return value
@@ -89,7 +105,43 @@ function scoreProduct(product: Product, query: string) {
   return score;
 }
 
-export function searchProducts(
+function toSearchResult(
+  product: Product,
+  locale: Locale,
+): ProductSearchResult {
+  return {
+    id: product.id,
+    name: product.name[locale],
+    manufacturer: product.manufacturer,
+    articleNumber: product.articleNumber,
+    category: product.category[locale],
+    price: product.price,
+    currency: product.currency,
+    inStock: product.inStock,
+    quantity: product.quantity,
+    url: productPath(product.id, locale),
+  };
+}
+
+function typesenseHitToResult(
+  document: TypesenseProductDocument,
+  locale: Locale,
+): ProductSearchResult {
+  return {
+    id: document.id,
+    name: locale === "sv" ? document.name_sv : document.name_en,
+    manufacturer: document.manufacturer,
+    articleNumber: document.articleNumber,
+    category: locale === "sv" ? document.category_sv : document.category_en,
+    price: document.price,
+    currency: document.currency,
+    inStock: document.inStock,
+    quantity: document.quantity,
+    url: productPath(document.id, locale),
+  };
+}
+
+function searchProductsLocal(
   query: string,
   locale: Locale,
 ): ProductSearchResult[] {
@@ -102,16 +154,36 @@ export function searchProducts(
     .toSorted((a, b) => b.score - a.score)
     .slice(0, MAX_SEARCH_RESULTS);
 
-  return ranked.map(({ product }) => ({
-    id: product.id,
-    name: product.name[locale],
-    manufacturer: product.manufacturer,
-    articleNumber: product.articleNumber,
-    category: product.category[locale],
-    price: product.price,
-    currency: product.currency,
-    inStock: product.inStock,
-    quantity: product.quantity,
-    url: productPath(product.id, locale),
-  }));
+  return ranked.map(({ product }) => toSearchResult(product, locale));
+}
+
+export async function searchProducts(
+  query: string,
+  locale: Locale,
+): Promise<ProductSearchResult[]> {
+  const trimmed = query.trim();
+  if (!trimmed) return [];
+
+  try {
+    const result = await typesense
+      .collections(PRODUCTS_COLLECTION)
+      .documents()
+      .search({
+        q: trimmed,
+        query_by: TYPESENSE_QUERY_BY,
+        per_page: MAX_SEARCH_RESULTS,
+        num_typos: 1,
+        prefix: true,
+      });
+
+    return (result.hits ?? []).map((hit) =>
+      typesenseHitToResult(
+        hit.document as TypesenseProductDocument,
+        locale,
+      ),
+    );
+  } catch (error) {
+    console.error("Typesense search failed, falling back to local search:", error);
+    return searchProductsLocal(trimmed, locale);
+  }
 }

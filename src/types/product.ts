@@ -10,7 +10,7 @@ export type Product = {
   category: LocalizedText;
   name: LocalizedText;
   description: LocalizedText;
-  image: string;
+  images: string[];
   price: number;
   currency: string;
   quantity: number;
